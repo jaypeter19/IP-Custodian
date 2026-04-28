@@ -140,7 +140,7 @@ section {
     width: min(100% - 2rem, var(--container-max-width));
 }
 
-.ip-dark{
+.ip-dark {
     color: var(--blue-primary-dark);
 }
 
@@ -188,12 +188,10 @@ section {
     width: 100%;
     height: 8px;
 
-    background: linear-gradient(
-        to right,
-        var(--purple-primary-normal) 0%,
-        var(--blue-primary-normal) 49%,
-        var(--green-primary-normal) 100%
-    );
+    background: linear-gradient(to right,
+            var(--purple-primary-normal) 0%,
+            var(--blue-primary-normal) 49%,
+            var(--green-primary-normal) 100%);
 }
 
 .navbar .navbar-brand {
@@ -201,8 +199,6 @@ section {
     color: var(--black-primary);
     font-weight: bold;
 }
-
-
 
 .navbar .menu {
     background-color: var(--background-primary) !important;
@@ -254,3 +250,39 @@ section {
 .hero-text p {
     font-size: 14px;
 }
+
+/* About */
+
+.about-section h2 {
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 96px;
+}
+
+.about-section h3 {
+    font-family: var(--font-tertiary);
+    font-weight: bold;
+    font-size: 32px;
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--blue-primary-normal) 24%,
+            var(--purple-primary-normal) 69%);
+    background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.about-section p:not(.large) {
+    font-size: 26px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0rem 8rem 1rem 8rem;
+}
+
+.about-section .large {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 8rem;
+}
+
+

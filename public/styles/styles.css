@@ -44,9 +44,11 @@
     --radius-sm: 8px;
     --radius-md: 30px;
     --radius-lg: 39px;
+    --radius-xl: 50px;
 
     /* Effects */
     --box-shadow-btn: 0 4px 4px 0 #00000040;
+    --purple-gradient: #203eff;
 
 }
 
@@ -95,6 +97,7 @@ select {
 
 a {
     color: var(--white-primary);
+    font-family: var(--font-primary);
     text-decoration: none;
 }
 
@@ -285,4 +288,94 @@ section {
     margin-top: 8rem;
 }
 
+/* Video */
 
+.video-section {
+    background-image: url(../assets/images/videoPreview01.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 560px;
+}
+
+
+.video-section h2 {
+    color: var(--white-primary);
+    font-size: 128px;
+    margin-bottom: 4rem;
+}
+
+.video-section .btn-orange {
+    font-size: 48px;
+    font-weight: bolder;
+    padding: 22px 96px;
+    width: 558px;
+    height: auto;
+}
+
+/* Differentiators */
+
+.differentiatior-section {
+    background-color: var(--background-primary);
+    border-radius: var(--radius-lg);
+    height: 691px;
+    margin-top: 8rem;
+}
+
+
+.differentiatior-section .title h2 {
+    font-weight: bolder;
+    font-size: 128px;
+}
+
+.title span {
+    color: transparent;
+    background: linear-gradient(to bottom,
+            var(--purple-gradient) 77%,
+            var(--blue-primary-normal) 100%);
+    background-clip: text;
+    opacity: 58%;
+}
+
+.differentiatior-section .carousel .carousel-item {
+    padding-top: 45px;
+    padding-left: 45px;
+}
+
+.differentiatior-section .carousel .card {
+    position: relative;
+    background: transparent;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--black-primary);
+    color: var(--black-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 392px;
+    width: 528px;
+    margin: 1rem auto;
+    padding: 64px 59px;
+}
+
+.card h3 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card p {
+    font-family: var(--font-tertiary);
+    font-size: 26px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.card-icon img {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    right: 85%;
+    top: -15%;
+    z-index: 2;
+
+}

@@ -198,9 +198,10 @@ section {
 }
 
 .navbar .navbar-brand {
-    font-family: var(--font-primary);
     color: var(--black-primary);
+    font-family: var(--font-primary);
     font-weight: bold;
+    font-size: 48px;
 }
 
 .navbar .menu {
@@ -255,6 +256,12 @@ section {
 }
 
 /* About */
+.about-section {
+    background-image: url(/public/assets/images/about01.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 
 .about-section h2 {
     font-family: var(--font-primary);
@@ -331,7 +338,7 @@ section {
 .title span {
     color: transparent;
     background: linear-gradient(to bottom,
-            var(--purple-gradient) 77%,
+            var(--purple-gradient) 50%,
             var(--blue-primary-normal) 100%);
     background-clip: text;
     opacity: 58%;
@@ -416,3 +423,42 @@ section {
     bottom: 0%
 }
 
+.faq-section .faq-questions {
+    margin-top: 4rem;
+}
+
+.faq-questions .accordion {
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.faq-questions .accordion .accordion-item {
+    border: none;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.faq-questions .accordion-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.faq-questions .accordion-button,
+.faq-questions .accordion-button.collapsed {
+    border-radius: var(--radius-sm) !important;
+}
+
+.faq-questions .accordion-button {
+    background-color: var(--background-primary);
+    color: var(--black-primary);
+    font-family: var(--font-tertiary);
+}
+
+.faq-questions .accordion-button:not(.collapsed) {
+    border-radius: var(--radius-sm) !important;
+}
+
+.faq-questions .accordion-body {
+    background-color: var(--white-primary);
+    border-bottom-left-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
+}

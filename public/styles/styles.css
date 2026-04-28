@@ -46,6 +46,7 @@
     --radius-lg: 39px;
 
     /* Effects */
+    --box-shadow-btn: 0 4px 4px 0 #00000040;
 
 }
 
@@ -130,7 +131,6 @@ p {
     font-weight: 300;
 }
 
-
 section {
     padding: var(--section-padding);
 }
@@ -139,6 +139,36 @@ section {
 .container-fluid {
     width: min(100% - 2rem, var(--container-max-width));
 }
+
+.ip-dark{
+    color: var(--blue-primary-dark);
+}
+
+.btn-orange {
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: var(--orange-primary-normal);
+    border-radius: var(--radius-sm);
+    padding: 15px 41px;
+    margin-right: 1rem;
+    box-shadow: var(--box-shadow-btn);
+}
+
+.btn-blue {
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: var(--blue-primary-normal);
+    border-radius: var(--radius-sm);
+    padding: 15px 41px;
+    width: 237px;
+    height: auto;
+    box-shadow: var(--box-shadow-btn);
+}
+
 
 /* ==============================
    4. Header / Navbar
@@ -172,9 +202,7 @@ section {
     font-weight: bold;
 }
 
-.navbar .navbar-brand span {
-    color: var(--blue-primary-dark);
-}
+
 
 .navbar .menu {
     background-color: var(--background-primary) !important;
@@ -187,6 +215,12 @@ section {
     color: var(--black-navbar);
 }
 
+.nav-link.active {
+    background-color: var(--blue-primary-normal);
+    color: var(--white-primary) !important;
+    border-radius: var(--radius-md);
+}
+
 .navbar .contact {
     background-color: var(--black-primary) !important;
     border-radius: var(--radius-md);
@@ -196,4 +230,27 @@ section {
 .contact .nav-link {
     font-weight: bolder;
     color: var(--white-primary);
+}
+
+/* ==============================
+   5. Main Sections
+   ============================== */
+
+/* Hero */
+
+.hero-section {
+    background-color: var(--background-primary);
+    border-bottom-left-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
+}
+
+.hero-section .hero-text h1 {
+    font-size: 74px;
+    font-family: var(--font-primary);
+    font-weight: bold;
+    color: var(--black-primary);
+}
+
+.hero-text p {
+    font-size: 14px;
 }

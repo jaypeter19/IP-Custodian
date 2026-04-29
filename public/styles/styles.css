@@ -159,12 +159,12 @@ section {
     padding: 15px 41px;
     margin-right: 1rem;
     box-shadow: var(--box-shadow-btn);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .btn-orange:hover {
     background-color: var(--white-primary-hover);
     color: var(--orange-primary-normal);
-    transition: all 0.3s ease-in;
 }
 
 .btn-blue {
@@ -178,12 +178,12 @@ section {
     width: 237px;
     height: auto;
     box-shadow: var(--box-shadow-btn);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .btn-blue:hover {
     background-color: var(--white-primary-hover);
     color: var(--blue-primary-normal);
-    transition: all 0.3s ease-in;
 }
 
 
@@ -231,18 +231,17 @@ section {
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .menu .nav-link.active {
     background-color: var(--blue-primary-normal);
     color: var(--white-primary) !important;
     border-radius: var(--radius-md);
-    transition: all 0.3s ease-in;
 }
 
-.menu .nav-link:hover{
+.menu .nav-link:hover {
     background-color: var(--blue-primary-hover);
-    transition: all 0.3s ease-in;
 }
 
 .contact .nav-link {
@@ -254,12 +253,12 @@ section {
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
 .contact .nav-link:hover {
     color: var(--black-primary);
     background-color: var(--background-primary);
-    transition: all 0.3s ease-in;
 }
 
 /* ==============================
@@ -395,6 +394,17 @@ section {
     width: 528px;
     margin: 1rem auto;
     padding: 64px 59px;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.differentiatior-section .carousel .card:hover {
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
+
+.differentiatior-section .carousel .card:hover h3,
+.differentiatior-section .carousel .card:hover p {
+    color: var(--white-primary);
 }
 
 .card h3 {
@@ -474,25 +484,28 @@ section {
     margin-bottom: 24px;
 }
 
-.faq-questions .accordion-button,
-.faq-questions .accordion-button.collapsed {
-    border-radius: var(--radius-sm) !important;
-}
-
 .faq-questions .accordion-button {
     background-color: var(--background-primary);
     color: var(--black-primary);
     font-family: var(--font-tertiary);
     font-weight: bold;
     font-size: 24px;
+    transition: background-color 0.3s ease-in;
+}
+.faq-questions .accordion-button:hover {
+    background-color: var(--background-secondary);
 }
 
+
 .faq-questions .accordion-button:not(.collapsed) {
-    border-radius: var(--radius-sm) !important;
+    background-color: var(--blue-primary-normal);
+    color: var(--white-primary);
+    box-shadow: none;
 }
 
 .faq-questions .accordion-body {
-    background-color: var(--white-primary);
+    background-color: var(--blue-primary-normal);
+    color: var(--white-primary);
     border-bottom-left-radius: var(--radius-sm);
     border-bottom-right-radius: var(--radius-sm);
 }

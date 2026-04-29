@@ -7,6 +7,7 @@
     --blue-primary-normal: #25c4fe;
     --blue-primary-light: #e9f9ff;
     --blue-primary-dark: #1c93bf;
+    --blue-primary-darker: #0d4559;
     /* Purple Primary */
     --purple-primary-normal: #8f19ff;
     --purple-primary-light: #f4e8ff;
@@ -24,6 +25,8 @@
     /* Background Colors */
     --background-primary: #def6ff;
     --background-secondary: #bbedff;
+    --background-footer-primary: #167698;
+
     /* Typography */
     --font-primary: "Google Sans Flex", "Google Sans", "Roboto", Arial, sans-serif;
     --font-secondary: "Google Sans", Arial, sans-serif;
@@ -138,6 +141,10 @@ section {
 
 .ip-dark {
     color: var(--blue-primary-dark);
+}
+
+.ip-darker {
+    color: var(--blue-primary-darker);
 }
 
 .btn-orange {
@@ -444,6 +451,8 @@ section {
     background-color: var(--background-primary);
     color: var(--black-primary);
     font-family: var(--font-tertiary);
+    font-weight: bold;
+    font-size: 24px;
 }
 
 .faq-questions .accordion-button:not(.collapsed) {
@@ -457,6 +466,10 @@ section {
 }
 
 /* Contact Us */
+
+.contact-section div:first-child {
+    position: relative;
+}
 
 .contact-section h2 {
     font-size: 48px;
@@ -496,9 +509,98 @@ section {
     padding: 66px 49px;
 }
 
+.contact-section .form label {
+    font-size: var(--font-tertiary);
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--black-primary);
+}
+
+.contact-section .form .form-control {
+    padding: 10px;
+}
+
 .contact-section .form .btn-blue {
     font-size: 24px;
     font-weight: bolder;
     width: 261px;
     height: auto;
 }
+
+.contact-section .custodian-logo{
+    height: 119px;
+    position: absolute;
+    bottom: 0%;
+}
+
+/* ==============================
+   6. Footer
+   ============================== */
+
+footer .container-fluid {
+    width: 100%;
+}
+
+.footer{
+    background-color: var(--background-footer-primary);
+    padding: 60px;
+    color: var(--white-primary);
+}
+
+.footer-copyright{
+    background-color: var(--blue-primary-dark);
+    color: var(--white-primary);
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer h2 {
+    color: var(--white-primary);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.footer h3 {
+    font-family: var(--font-tertiary);
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--white-primary);
+}
+
+.footer-contact a {
+    font-family: var(--font-tertiary);
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    padding-right: 14px;
+}
+
+.footer-copyright p{
+    display: inline-block;
+    margin: 0;
+    padding: 12px 34px;
+}
+
+.footer-copyright a,p{
+    font-family: var(--font-tertiary);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/* ==============================
+   7. Responsive
+   ============================== */

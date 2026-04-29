@@ -38,7 +38,7 @@
     --line-height-heading: 1.15;
     /* Layout */
     --container-max-width: 1200px;
-    --section-padding: 5rem 0;
+    --section-padding: 4rem 0;
     --radius-sm: 8px;
     --radius-md: 30px;
     --radius-lg: 39px;
@@ -275,6 +275,7 @@ section {
     font-family: var(--font-primary);
     font-weight: bolder;
     font-size: 96px;
+    margin: 64px 0p 17px 0px;
 }
 
 .about-section h3 {
@@ -300,7 +301,7 @@ section {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
-    margin-top: 8rem;
+    margin-top: 280px;
 }
 
 /* Video */
@@ -311,19 +312,20 @@ section {
     background-size: cover;
     background-repeat: no-repeat;
     height: 560px;
+    display: flex;
+    align-items: center;
 }
 
 
 .video-section h2 {
     color: var(--white-primary);
     font-size: 128px;
-    margin-bottom: 4rem;
 }
 
 .video-section .btn-orange {
     font-size: 48px;
     font-weight: bolder;
-    padding: 22px 96px;
+    padding: 22px;
     width: 558px;
     height: auto;
 }
@@ -333,7 +335,7 @@ section {
 .differentiatior-section {
     background-color: var(--background-primary);
     border-radius: var(--radius-lg);
-    height: 691px;
+    height: 670px;
     margin-top: 8rem;
 }
 
@@ -515,6 +517,7 @@ section {
     background-color: var(--background-secondary);
     border-radius: var(--radius-sm);
     padding: 66px 49px;
+    margin: 0px 24px;
 }
 
 .contact-section .form label {

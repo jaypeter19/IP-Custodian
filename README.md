@@ -39,4 +39,4 @@ In Development
 
 ## Developed By
 
-João Pedro + Design Team
+João Pedro Telles Fava

@@ -201,18 +201,22 @@ section {
     color: var(--black-primary);
     font-family: var(--font-primary);
     font-weight: bold;
-    font-size: 48px;
+    font-size: 40px;
 }
 
 .navbar .menu {
-    background-color: var(--background-primary) !important;
+    background-color: var(--background-primary);
     border-radius: var(--radius-md);
-    padding: 8px !important;
+    padding: 8px;
 }
 
 .menu .nav-link {
-    font-weight: bolder;
+    min-width: 103px;
+    padding: 7px;
     color: var(--black-navbar);
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
 }
 
 .nav-link.active {
@@ -222,14 +226,18 @@ section {
 }
 
 .navbar .contact {
-    background-color: var(--black-primary) !important;
+    background-color: var(--black-primary);
     border-radius: var(--radius-md);
-    padding: 8px !important;
+    padding: 8px;
 }
 
 .contact .nav-link {
-    font-weight: bolder;
+    width: 140px;
+    padding: 7px;
     color: var(--white-primary);
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
 }
 
 /* ==============================
@@ -527,7 +535,7 @@ section {
     height: auto;
 }
 
-.contact-section .custodian-logo{
+.contact-section .custodian-logo {
     height: 119px;
     position: absolute;
     bottom: 0%;
@@ -541,13 +549,13 @@ footer .container-fluid {
     width: 100%;
 }
 
-.footer{
+.footer {
     background-color: var(--background-footer-primary);
     padding: 60px;
     color: var(--white-primary);
 }
 
-.footer-copyright{
+.footer-copyright {
     background-color: var(--blue-primary-dark);
     color: var(--white-primary);
 }
@@ -589,13 +597,14 @@ footer .container-fluid {
     padding-right: 14px;
 }
 
-.footer-copyright p{
+.footer-copyright p {
     display: inline-block;
     margin: 0;
     padding: 12px 34px;
 }
 
-.footer-copyright a,p{
+.footer-copyright a,
+p {
     font-family: var(--font-tertiary);
     font-weight: 400;
     font-size: 18px;

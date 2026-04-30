@@ -354,7 +354,7 @@ section {
     font-size: 48px;
     font-weight: bolder;
     padding: 22px;
-    width: 558px;
+    min-width: 558px;
     height: auto;
 }
 
@@ -763,7 +763,7 @@ p {
    7. Responsive
    ============================== */
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 420px) {
     section {
         padding: var(--section-padding-sm);
     }
@@ -825,7 +825,7 @@ p {
 
     .video-section .btn-orange {
         font-size: 22px;
-        width: 38px;
+        min-width: 38px;
     }
 
     .differentiatior-section {
@@ -844,25 +844,25 @@ p {
     }
 
     .differentiatior-section .carousel .card {
-        height: 292px;
-        width: 100%;
+        height: 240px;
+        width: 95%;
         margin: 1rem auto;
-        padding: 40px;
+        padding: 30px;
     }
 
     .card h3 {
-        font-size: 28px;
+        font-size: 24px;
     }
 
     .card p {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .card-icon img {
         height: 80px;
         width: 80px;
-        left: -7%;
-        top: -7%;
+        left: -9%;
+        top: -10%;
     }
 
     .services-section h2 {
@@ -892,7 +892,7 @@ p {
     }
 
     .faq-section .faq-title {
-        padding-left: 6rem;
+        padding-left: 8rem;
     }
 
     .faq-section .faq-icon {
@@ -937,8 +937,9 @@ p {
     }
 
     .contact-section .form .btn-blue {
-        font-size: 20px;
-        max-width: 180px;
+        font-size: 18px;
+        width: 215px;
+        min-width: 180px;
     }
 
     .contact-section .custodian-logo {
@@ -958,6 +959,80 @@ p {
         padding: 12px;
     }
 
+}
 
+@media only screen and (max-width: 350px) {
+    .hero-section .hero-text h1 {
+        font-size: 33px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .video-section h2 {
+        font-size: 36px;
+    }
+
+    .differentiatior-section .carousel .card {
+        height: 220px;
+        padding: 20px;
+    }
+
+    .card-icon img {
+        height: 75px;
+        width: 75px;
+        left: -7%;
+        top: -15%;
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .services-options .accordion-button {
+        min-height: 54px;
+        padding: 20px 15px 20px 5px;
+        font-size: 18px;
+    }
+
+    .map-section h2 {
+        font-size: 16px;
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 23px;
+    }
+
+    .faq-section .faq-title p {
+        font-size: 18px;
+    }
+
+    .faq-questions .accordion-button {
+        font-size: 18px;
+    }
+
+    .contact-section .form label {
+        font-size: 20px;
+    }
+
+    .contact-section .form .btn-blue {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .footer h2 {
+        font-size: 44px;
+    }
+
+    .footer-copyright a,
+    p {
+        padding-top: 0px;
+        font-size: 14px;
+    }
 
 }

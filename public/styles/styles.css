@@ -39,7 +39,8 @@
     --line-height-heading: 1.15;
     /* Layout */
     --container-max-width: 1200px;
-    --section-padding: 4rem 0;
+    --section-padding-sm: 1rem 0;
+    --section-padding-lg: 4rem 0;
     --radius-sm: 8px;
     --radius-md: 30px;
     --radius-lg: 39px;
@@ -134,7 +135,7 @@ p {
 }
 
 section {
-    padding: var(--section-padding);
+    padding: var(--section-padding-lg);
 }
 
 .container,
@@ -150,6 +151,14 @@ section {
     color: var(--blue-primary-darker);
 }
 
+.btn-orange,
+.btn-blue {
+    min-width: 237px;
+    padding: 15px 41px;
+    text-align: center;
+}
+
+
 .btn-orange {
     color: var(--white-primary);
     font-family: var(--font-primary);
@@ -157,7 +166,6 @@ section {
     font-size: 24px;
     background-color: var(--orange-primary-normal);
     border-radius: var(--radius-sm);
-    padding: 15px 41px;
     margin-right: 1rem;
     box-shadow: var(--box-shadow-btn);
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
@@ -175,8 +183,6 @@ section {
     font-size: 24px;
     background-color: var(--blue-primary-normal);
     border-radius: var(--radius-sm);
-    padding: 15px 41px;
-    width: 237px;
     height: auto;
     box-shadow: var(--box-shadow-btn);
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
@@ -297,7 +303,7 @@ section {
     font-family: var(--font-primary);
     font-weight: bolder;
     font-size: 96px;
-    margin: 64px 0p 17px 0px;
+    margin: 64px 0px 17px 0px;
 }
 
 .about-section h3 {
@@ -323,7 +329,7 @@ section {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
-    margin-top: 280px;
+    margin-top: 380px;
 }
 
 /* Video */
@@ -756,3 +762,202 @@ p {
 /* ==============================
    7. Responsive
    ============================== */
+
+@media only screen and (max-width: 575px) {
+    section {
+        padding: var(--section-padding-sm);
+    }
+
+    .navbar .navbar-brand {
+        font-size: 30px;
+    }
+
+    .hero-section {
+        padding: var(--section-padding-sm);
+    }
+
+    .hero-section .hero-text {
+        text-align: center;
+    }
+
+    .hero-section .hero-text h1 {
+        font-size: 38px;
+        text-align: start;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        text-align: start;
+    }
+
+    .btn-orange,
+    .btn-blue {
+        margin: 12px 0px 12px 0px;
+    }
+
+    .hero-image {
+        margin: 1rem auto;
+    }
+
+
+    .about-section h2 {
+        font-size: 28px;
+        margin: 17px 0px 17px 0px;
+    }
+
+    .about-section h3 {
+        font-size: 26px;
+    }
+
+    .about-section p:not(.large) {
+        font-size: 16px;
+        padding: 0;
+    }
+
+    .about-section .large {
+        font-size: 26px;
+        margin-top: 0px;
+    }
+
+    .video-section h2 {
+        font-size: 48px;
+    }
+
+    .video-section .btn-orange {
+        font-size: 22px;
+        width: 38px;
+    }
+
+    .differentiatior-section {
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .differentiatior-section .title h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .differentiatior-section .carousel .carousel-item {
+        padding-top: 15px;
+        padding-left: 20px;
+    }
+
+    .differentiatior-section .carousel .card {
+        height: 292px;
+        width: 100%;
+        margin: 1rem auto;
+        padding: 40px;
+    }
+
+    .card h3 {
+        font-size: 28px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .card-icon img {
+        height: 80px;
+        width: 80px;
+        left: -7%;
+        top: -7%;
+    }
+
+    .services-section h2 {
+        font-size: 28px;
+    }
+
+    .services-section .services-options {
+        margin-top: 20px;
+    }
+
+    .services-options .accordion-button {
+        min-height: 74px;
+        padding: 40px 15px 40px 5px;
+    }
+
+    .services-section .btn-trouble {
+        margin: 38px auto;
+    }
+
+    .map-section h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .map {
+        height: 225px;
+    }
+
+    .faq-section .faq-title {
+        padding-left: 6rem;
+    }
+
+    .faq-section .faq-icon {
+        width: 84px;
+        height: 84px;
+        right: 75%;
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 28px;
+    }
+
+    .faq-section .faq-title p {
+        font-size: 20px;
+    }
+
+    .faq-section .faq-questions {
+        margin-top: 24px;
+    }
+
+    .contact-section {
+        padding-bottom: 0px;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .reach ul img {
+        height: 20px;
+    }
+
+    .reach a {
+        font-size: 18px;
+    }
+
+    .contact-section .form {
+        width: 100%;
+        padding: 30px;
+        margin: 24px auto;
+    }
+
+    .contact-section .form .btn-blue {
+        font-size: 20px;
+        max-width: 180px;
+    }
+
+    .contact-section .custodian-logo {
+        height: 85px;
+        left: -2%;
+    }
+
+    .footer {
+        padding: 20px
+    }
+
+    .footer h2 {
+        font-size: 50px;
+    }
+
+    .footer-copyright p {
+        padding: 12px;
+    }
+
+
+
+}

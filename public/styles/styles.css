@@ -862,6 +862,16 @@ p {
 
 @media only screen and (max-width: 992px) {
 
+    .navbar .menu {
+        width: 60%;
+        max-width: 600px;
+        flex-direction: row;
+    }
+
+    .navbar .contact {
+        margin-top: 1rem;
+    }
+
 
     .hero-section .hero-text h1 {
         font-size: 42px;
@@ -967,6 +977,15 @@ p {
 
 
 @media only screen and (max-width: 768px) {
+    .navbar .menu {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .navbar .contact {
+        width: 30%;
+    }
+
     section {
         padding: var(--section-padding-sm);
     }
@@ -1082,6 +1101,19 @@ p {
 
 @media only screen and (max-width: 575px) {
 
+    .navbar .menu {
+        width: 100%;
+        padding: 0;
+    }
+
+    .menu .nav-link {
+        padding: 7px;
+    }
+
+    .navbar .contact {
+        width: 40%;
+    }
+
     .hero-text p {
         font-size: 16px;
         text-align: start;
@@ -1166,6 +1198,7 @@ p {
 
     .services-options .accordion-button {
         font-size: 20px;
+        height: 80px;
     }
 
     .faq-section .faq-title h2 {
@@ -1173,7 +1206,7 @@ p {
     }
 
     .faq-section .faq-title {
-        padding-left: 10rem;
+        padding-left: 8rem;
     }
 
     .faq-section .faq-icon {
@@ -1183,6 +1216,17 @@ p {
 }
 
 @media only screen and (max-width: 420px) {
+
+    .menu .nav-link,
+    .contact .nav-link {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .navbar .contact {
+        width: 30%;
+    }
+
     section {
         padding: var(--section-padding-sm);
     }
@@ -1296,7 +1340,7 @@ p {
     }
 
     .faq-section .faq-title h2 {
-        font-size: 20px;
+        font-size: 23px;
     }
 
     .faq-section .faq-title p {
@@ -1370,6 +1414,12 @@ p {
 }
 
 @media only screen and (max-width: 350px) {
+
+    .menu .nav-link,
+    .contact .nav-link {
+        font-size: 8px;
+    }
+
     .hero-section .hero-text h1 {
         font-size: 33px;
     }

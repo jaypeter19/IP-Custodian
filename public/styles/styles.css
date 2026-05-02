@@ -437,7 +437,7 @@ section {
     height: 120px;
     width: 120px;
     position: absolute;
-    right: 84%;
+    right: 85%;
     top: -15%;
     z-index: 2;
 }
@@ -830,20 +830,23 @@ p {
         max-width: 360px;
     }
 
+    .differentiatior-section .carousel .carousel-item {
+        padding-left: 50px;
+    }
+
     .differentiatior-section .title h2 {
-        font-size: 103px;
+        font-size: 108px;
     }
 
     .differentiatior-section .carousel .card {
         max-height: 395px;
         max-width: 555px;
-        padding: 44px;
     }
 
     .card-icon img {
         height: 110px;
         width: 110px;
-        right: 85%;
+        right: 86%;
         top: -10%;
     }
 
@@ -857,7 +860,7 @@ p {
     }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
 
     .hero-section .hero-text h1 {
         font-size: 44px;
@@ -902,6 +905,7 @@ p {
 
     .differentiatior-section .title h2 {
         font-size: 98px;
+        text-align: center;
     }
 
     .differentiatior-section .carousel .carousel-item {
@@ -911,7 +915,6 @@ p {
 
     .differentiatior-section .carousel .card {
         height: 380px;
-        padding: 34px;
     }
 
     .card-icon img {
@@ -1029,11 +1032,6 @@ p {
         height: 600px;
     }
 
-    .differentiatior-section .carousel .carousel-item {
-        padding-top: 25px;
-        padding-left: 25px;
-    }
-
     .differentiatior-section .title h2 {
         font-size: 68px;
         text-align: center;
@@ -1041,9 +1039,8 @@ p {
 
     .differentiatior-section .carousel .card {
         height: 325px;
-        width: 100%;
         max-width: 440px;
-        padding: 20px;
+        padding: 34px;
     }
 
     .card-icon img {
@@ -1161,20 +1158,12 @@ p {
 
     .differentiatior-section .title h2 {
         font-size: 45px;
-        text-align: center;
-    }
-
-    .differentiatior-section .carousel .carousel-item {
-        padding-top: 15px;
-        padding-left: 20px;
     }
 
     .differentiatior-section .carousel .card {
         height: 240px;
-        width: 85%;
-        max-width: 310px;
+        max-width: 350px;
         margin: 1rem auto;
-        padding: 30px;
     }
 
     .card h3 {
@@ -1283,18 +1272,6 @@ p {
     .differentiatior-section .title h2 {
         font-size: 32px;
         text-align: center;
-    }
-
-    .differentiatior-section .carousel .carousel-item {
-        padding-top: 15px;
-        padding-left: 20px;
-    }
-
-    .differentiatior-section .carousel .card {
-        height: 240px;
-        width: 95%;
-        margin: 1rem auto;
-        padding: 30px;
     }
 
     .card h3 {
@@ -1451,7 +1428,6 @@ p {
 
     .differentiatior-section .carousel .card {
         height: 220px;
-        padding: 20px;
     }
 
     .card-icon img {
@@ -1466,7 +1442,7 @@ p {
     }
 
     .card p {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .services-options .accordion-button {

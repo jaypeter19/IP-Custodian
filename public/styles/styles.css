@@ -565,7 +565,6 @@ section {
 
 .faq-section .faq-title {
     position: relative;
-    padding-left: 10rem;
 }
 
 .faq-section .faq-title h2 {
@@ -581,8 +580,8 @@ section {
     width: 214px;
     height: 214px;
     position: absolute;
-    right: 85%;
-    bottom: 0%
+    right: 90%;
+    top: -15%;
 }
 
 .faq-section .faq-questions {
@@ -687,6 +686,7 @@ section {
 .contact-section .form .btn-blue {
     font-size: 24px;
     font-weight: bolder;
+    max-width: 220px;
     height: auto;
 }
 
@@ -820,11 +820,11 @@ p {
 @media only screen and (max-width: 1400px) {
 
     .faq-section .faq-icon {
-        right: 78%;
+        right: 80%;
     }
 
     .faq-section .faq-title {
-        padding-left: 15rem;
+        padding-left: 4rem;
     }
 }
 
@@ -886,10 +886,6 @@ p {
         font-size: 34px;
     }
 
-
-    .faq-section .faq-icon {
-        right: 75%;
-    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -960,18 +956,18 @@ p {
         font-size: 34px;
     }
 
-    .faq-section .faq-icon {
-        width: 180px;
-        height: 180px;
-        right: 65%;
+    .faq-section .faq-title {
+        padding-left: 2rem;
     }
 
-    .faq-section .faq-title {
-        padding-left: 16rem;
+    .faq-section .faq-icon {
+        width: 140px;
+        height: 140px;
+        right: 80%;
     }
 
     .faq-section .faq-title h2 {
-        font-size: 44px;
+        font-size: 54px;
     }
 
     .contact-section .form {
@@ -1091,15 +1087,13 @@ p {
 
 
     .faq-section .faq-title {
-        padding-left: 10rem;
+        padding-left: 0rem;
     }
 
     .faq-section .faq-icon {
-        width: 100px;
-        height: 100px;
-        right: 80%;
+        top: -4%;
+        right: 70%;
     }
-
 
     .faq-section .faq-title h2 {
         font-size: 38px;
@@ -1210,8 +1204,12 @@ p {
         font-size: 38px;
     }
 
+    .services-options .service-option h3 {
+        font-size: 32px;
+    }
+
     .services-section p {
-        font-size: 18px;
+        font-size: 17px;
     }
 
     .services-section .btn-trouble {
@@ -1220,14 +1218,6 @@ p {
 
     .faq-section .faq-title h2 {
         font-size: 30px;
-    }
-
-    .faq-section .faq-title {
-        padding-left: 8rem;
-    }
-
-    .faq-section .faq-icon {
-        right: 70%;
     }
 
 }
@@ -1337,7 +1327,7 @@ p {
     }
 
     .faq-section .faq-title h2 {
-        font-size: 23px;
+        font-size: 22px;
     }
 
     .faq-section .faq-title p {
@@ -1351,7 +1341,6 @@ p {
     .faq-section .faq-icon {
         width: 80px;
         height: 80px;
-        right: 75%;
     }
 
     .contact-section {
@@ -1380,7 +1369,6 @@ p {
     .contact-section .form .btn-blue {
         font-size: 18px;
         width: 215px;
-        min-width: 180px;
     }
 
     .contact-section .custodian-logo {
@@ -1466,10 +1454,6 @@ p {
         font-size: 16px;
     }
 
-    .faq-section .faq-title {
-        padding-left: 6rem;
-    }
-
     .faq-section .faq-title p {
         font-size: 18px;
     }
@@ -1484,7 +1468,7 @@ p {
 
     .contact-section .form .btn-blue {
         font-size: 16px;
-        width: 200px;
+        width: 180px;
     }
 
 }

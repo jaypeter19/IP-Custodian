@@ -1,0 +1,1 @@
+window.MAPBOX_ACCESS_TOKEN = 'pk.your_public_mapbox_token_here';

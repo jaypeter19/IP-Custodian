@@ -1,0 +1,61 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.2603,
+                    53.3498
+                ]
+            },
+            "properties": {
+                "title": "Ireland",
+                "description": "Dublin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -118.2437,
+                    34.0522
+                ]
+            },
+            "properties": {
+                "title": "United States",
+                "description": "Los Angeles"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -74.0721,
+                    4.711
+                ]
+            },
+            "properties": {
+                "title": "Colombia",
+                "description": "Bogotá"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -51.2177,
+                    -30.0346
+                ]
+            },
+            "properties": {
+                "title": "Brazil",
+                "description": "Porto Alegre"
+            }
+        }
+    ]
+}

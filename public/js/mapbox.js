@@ -1,5 +1,5 @@
 if (!window.MAPBOX_ACCESS_TOKEN) {
-    throw new Error('Missing Mapbox access token. Create public/js/config.js from public/js/config.example.js.');
+    throw new Error('Missing Mapbox access token. Create public/js/config.js locally or generate it in the Pages deploy workflow.');
 }
 
 mapboxgl.accessToken = window.MAPBOX_ACCESS_TOKEN;

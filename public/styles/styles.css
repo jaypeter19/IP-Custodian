@@ -358,11 +358,11 @@ section {
 }
 
 .video-section .btn-orange {
-    min-width: 360px;
+    margin: 0;
+    width: 360px;
+    height: auto;
     font-size: 42px;
     font-weight: bolder;
-    padding: 22px;
-    height: auto;
 }
 
 /* Differentiators */
@@ -787,16 +787,6 @@ p {
 
 @media only screen and (max-width: 1400px) {
 
-    .video-section h2 {
-        color: var(--white-primary);
-        font-size: 102px;
-    }
-
-    .video-section .btn-orange {
-        font-size: 36px;
-        width: 350px;
-    }
-
     .faq-section .faq-icon {
         right: 78%;
     }
@@ -834,6 +824,10 @@ p {
     .about-section .large {
         font-size: 54px;
         margin-top: 100px;
+    }
+
+    .video-section .btn-orange {
+        max-width: 360px;
     }
 
     .differentiatior-section .title h2 {
@@ -893,13 +887,12 @@ p {
     }
 
     .video-section h2 {
-        font-size: 68px;
+        font-size: 98px;
     }
 
     .video-section .btn-orange {
         font-size: 28px;
-        min-width: 260px;
-        max-width: 300px;
+        width: 280px;
 
     }
 
@@ -1028,6 +1021,10 @@ p {
         margin-top: 0px;
     }
 
+    .video-section h2 {
+        font-size: 88px;
+    }
+
     .differentiatior-section {
         height: 600px;
     }
@@ -1149,12 +1146,12 @@ p {
     }
 
     .video-section h2 {
-        font-size: 52px;
+        font-size: 58px;
     }
 
     .video-section .btn-orange {
-        font-size: 26px;
-        width: 280px;
+        font-size: 24px;
+        width: 230px;
     }
 
     .differentiatior-section {
@@ -1267,6 +1264,15 @@ p {
     .about-section p:not(.large) {
         font-size: 16px;
         padding: 0;
+    }
+
+    .video-section h2 {
+        font-size: 48px;
+    }
+
+    .video-section .btn-orange {
+        font-size: 22px;
+        width: 200px;
     }
 
     .differentiatior-section {
@@ -1440,14 +1446,7 @@ p {
     }
 
     .video-section h2 {
-        font-size: 36px;
-    }
-
-    .video-section .btn-orange {
-        font-size: 20px;
-        width: 220px;
-        min-width: 220px;
-        max-width: 280px;
+        font-size: 38px;
     }
 
     .differentiatior-section .carousel .card {

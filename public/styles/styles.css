@@ -503,11 +503,26 @@ section {
     text-shadow: var(--text-shadow);
 }
 
+.services-section p {
+    margin-bottom: 0;
+    font-family: var(--font-tertiary);
+    font-weight: 600;
+    color: var(--black-primary);
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.icon-trouble {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
 .services-section .btn-trouble {
     margin: 138px auto;
     background-color: var(--gray-primary);
     font-family: var(--font-primary);
-    font-size: 32px;
+    font-size: 28px;
     color: var(--black-primary);
     border-radius: 0;
     box-shadow: var(--box-shadow-btn);
@@ -1066,6 +1081,10 @@ p {
         font-size: 48px;
     }
 
+    .services-section .btn-trouble {
+        font-size: 22px;
+    }
+
     .map-section h2 {
         font-size: 20px;
     }
@@ -1191,6 +1210,14 @@ p {
         font-size: 38px;
     }
 
+    .services-section p {
+        font-size: 18px;
+    }
+
+    .services-section .btn-trouble {
+        font-size: 16px;
+    }
+
     .faq-section .faq-title h2 {
         font-size: 30px;
     }
@@ -1289,6 +1316,12 @@ p {
     .services-section h2 {
         font-size: 28px;
     }
+
+    .icon-trouble {
+        width: 20px;
+        height: 20px;
+    }
+
 
     .services-section .btn-trouble {
         margin: 38px auto;

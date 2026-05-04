@@ -1,0 +1,92 @@
+
+/* ==============================
+   2. Reset & Base
+   ============================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* ==============================
+   3. Global Components
+   ============================== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--white-primary);
+    color: var(--black-primary);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select,
+label {
+    font: inherit;
+}
+
+a {
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    text-decoration: none;
+}
+
+strong {
+    font-family: inherit;
+    font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--black-primary);
+    font-family: var(--font-primary);
+    font-weight: 700;
+    line-height: var(--line-height-heading);
+}
+
+p {
+    font-family: var(--font-tertiary);
+    color: var(--color-text-muted);
+    font-weight: 300;
+}
+
+section {
+    padding: var(--section-padding-lg);
+}
+
+.container,
+.container-fluid {
+    width: min(100% - 2rem, var(--container-max-width));
+}

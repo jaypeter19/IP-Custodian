@@ -1,0 +1,30 @@
+
+.contact-section .form {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
+    padding: 66px;
+}
+
+.contact-section .form label {
+    font-size: var(--font-tertiary);
+    font-weight: 300;
+    font-size: 22px;
+    color: var(--black-primary);
+}
+
+.contact-section .form .form-control {
+    padding: 10px;
+}
+
+.contact-section .form .btn-blue {
+    font-size: 24px;
+    font-weight: bolder;
+    max-width: 220px;
+    height: auto;
+}
+
+.contact-section .custodian-logo {
+    height: 119px;
+    position: absolute;
+    bottom: 0%;
+}

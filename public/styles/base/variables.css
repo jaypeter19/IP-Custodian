@@ -1,0 +1,54 @@
+/* ==============================
+   1. Root Variables
+   ============================== */
+:root {
+    /* Colors */
+    /* Blue Primary */
+    --blue-primary-normal: #25c4fe;
+    --blue-primary-light: #e9f9ff;
+    --blue-primary-dark: #1c93bf;
+    --blue-primary-darker: #0d4559;
+    /* Purple Primary */
+    --purple-primary-normal: #8f19ff;
+    --purple-primary-light: #f4e8ff;
+    --purple-primary-dark: #6b13bf;
+    /* Orange Primary */
+    --orange-primary-normal: #f4a261;
+    --orange-primary-light: #fef6ef;
+    --orange-primary-dark: #b77a49;
+    /* Green Primary */
+    --green-primary-normal: #00a86b;
+    /* Black & White */
+    --white-primary: #fff;
+    --black-primary: #000;
+    --black-navbar: rgb(0, 0, 0, 0.4);
+    --gray-primary: #D9D9D9;
+    /* Background Colors */
+    --background-primary: #def6ff;
+    --background-secondary: #bbedff;
+    --background-footer-primary: #167698;
+
+    /* Typography */
+    --font-primary: "Google Sans Flex", "Google Sans", "Roboto", Arial, sans-serif;
+    --font-secondary: "Google Sans", Arial, sans-serif;
+    --font-tertiary: "Roboto", Arial, sans-serif;
+    --font-size-base: 1rem;
+    --font-size-sm: 0.875rem;
+    --font-size-lg: 1.125rem;
+    --line-height-base: 1.6;
+    --line-height-heading: 1.15;
+    /* Layout */
+    --container-max-width: 1200px;
+    --section-padding-sm: 1rem 0;
+    --section-padding-lg: 4rem 0;
+    --radius-sm: 8px;
+    --radius-md: 30px;
+    --radius-lg: 39px;
+    --radius-xl: 50px;
+    /* Effects */
+    --box-shadow-btn: 0 4px 4px 0 #00000040;
+    --text-shadow: 0 6px 4px rgb(0, 0, 0, 0.25);
+    --purple-gradient: #203eff;
+    --blue-primary-hover: rgb(37, 196, 254, 0.4);
+    --white-primary-hover: #fdfeff;
+}

@@ -154,21 +154,21 @@
 }
 
 .benefits-about-section .countries{
-  background: url(/public/assets/videos/globe.gif);
+  background: url(../../assets/videos/globe.gif);
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .benefits-about-section .sleep{
-  background: url(/public/assets/videos/sleep.gif);
+  background: url(../../assets/videos/sleep.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .benefits-about-section .cases{
-  background: url(/public/assets/videos/cases.gif);
+  background: url(../../assets/videos/cases.gif);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;

@@ -345,22 +345,22 @@
                         <img src="public/assets/images/contact01.png" alt="Reach Out" class="reach-img">
                     </div>
                     <div class="col-md-6 form">
-                        <form action="">
+                        <form action="/" class="needs-validation" novalidate>
                             <div class="mb-3">
                                 <label for="name" class="form-label">Your name</label>
-                                <input type="text" class="form-control" id="name" name="name">
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="email" name="email">
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             <div class="mb-3">
                                 <label for="company" class="form-label">Company</label>
-                                <input type="text" class="form-control" id="company" name="company">
+                                <input type="text" class="form-control" id="company" name="company" required>
                             </div>
                             <div class="mb-3">
                                 <label for="help" class="form-label">What can we help with?</label>
-                                <textarea rows="6" class="form-control" name="help" id="help"></textarea>
+                                <textarea rows="6" class="form-control" name="help" id="help" required></textarea>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-blue">
@@ -432,6 +432,7 @@
     <script src="public/js/index.js"></script>
     <script src="public/js/config.js"></script>
     <script src="public/js/mapbox.js"></script>
+    <script src="public/js/forms.js"></script>
 </body>
 
 </html>

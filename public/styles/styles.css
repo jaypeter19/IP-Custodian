@@ -343,15 +343,29 @@ section {
 /* Video */
 
 .video-section {
-    background-image: url(../assets/images/videoPreview01.png);
+    position: relative;
+    background-image: url(../assets/videos/IPCustodian.gif);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 560px;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
+.video-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+.video-section .container-fluid {
+    position: relative;
+    z-index: 1;
+}
 
 .video-section h2 {
     color: var(--white-primary);
@@ -1242,6 +1256,10 @@ p {
         font-size: 18px;
     }
 
+    .video-section {
+        height: 360px;
+    }
+
     .video-section h2 {
         font-size: 58px;
     }
@@ -1372,6 +1390,10 @@ p {
 
     .about-section .large {
         font-size: 16px;
+    }
+
+    .video-section {
+        height: 260px;
     }
 
     .video-section h2 {

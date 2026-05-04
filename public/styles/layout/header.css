@@ -54,6 +54,7 @@
     color: var(--white-primary) !important;
     border-radius: var(--radius-md);
     margin-right: 1px;
+    margin-left: 1px;
 }
 
 .menu .nav-link:hover {

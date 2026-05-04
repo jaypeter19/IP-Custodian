@@ -1,6 +1,6 @@
 
 /* ==============================
-   2. Reset & Base
+   Reset & Base
    ============================== */
 *,
 *::before,
@@ -9,7 +9,7 @@
 }
 
 /* ==============================
-   3. Global Components
+   Global Components
    ============================== */
 html {
     scroll-behavior: smooth;

@@ -1,34 +1,194 @@
+/* ==============================
+   Main Sections
+   ============================== */
 
+/* Hero */
+.hero-about-section {
+  min-height: 500px;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  overflow: hidden;
+  border-bottom-right-radius: var(--radius-lg);
+  border-bottom-left-radius: var(--radius-lg);
+}
+
+.hero-about-section::before {
+  content: "";
+  position: absolute;
+  inset: -8px;
+  background: url(../../assets/images/hero02.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(3.2px);
+  z-index: 0;
+}
+
+.hero-about-section h1 {
+  margin: 0;
+  position: absolute;
+  bottom: -8%;
+  z-index: 1;
+  font-size: 128px;
+  font-weight: bold;
+  color: var(--white-primary);
+}
+
+/* About Custodian */
+
+.custodian-about-section h2 {
+  font-family: var(--font-tertiary);
+  font-size: 40px;
+  font-weight: 500;
+  margin: 32px auto;
+}
+
+.custodian-about-section p {
+  font-family: var(--font-tertiary);
+  font-weight: 300;
+  text-align: justify;
+}
+
+/* Carousel */
+.carousel-about-section {
+  border-radius: var(--radius-lg);
+  background-color: var(--background-primary);
+}
+
+.swiper {
+  width: 100%;
+  min-height: 626px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  border-radius: var(--radius-xl);
+  width: 700px;
+  height: 100%;
+}
+
+.swiper-slide-shadow-coverflow {
+  border-radius: var(--radius-xl);
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  object-fit: cover;
+}
+
+/* Keys Benefits */
+
+.keys-about-section p {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.keys-about-section span {
+  font-family: var(--font-primary);
+  font-size: 128px;
+  font-weight: bolder;
+  position: relative;
+}
+
+.keys-about-section img {
+  display: inline-block;
+  position: absolute
+}
+
+
+.key-mission {
+  color: transparent;
+  background: linear-gradient(to right,
+      var(--pink-gradient) 12%,
+      var(--blue-primary-normal) 100%);
+  background-clip: text;
+}
+
+.key-mission img, .key-values img {
+  right: 105%;
+}
+
+.key-vision {
+  color: transparent;
+  background: linear-gradient(to right,
+      var(--blue-primary-normal) 0%,
+      var(--purple-primary-normal) 100%);
+  background-clip: text;
+}
+
+.key-values {
+  color: transparent;
+  background: linear-gradient(to left,
+      var(--purple-primary-normal) 0%,
+      var(--orange-primary-normal) 100%);
+  background-clip: text;
+}
+
+/* Benefits */
+
+.benefits-about-section .container-fluid {
+  width: 100%;
+  max-width: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.benefits-about-section h2{
+  font-weight: bold;
+  font-size: 200px;
+  color: var(--white-primary);
+}
+
+.benefits-about-section .row {
+  height: 740px;
+  --bs-gutter-x: 0;
+  margin-right: 0;
+  margin-bottom: 35px;
+  margin-left: 0;
+}
+
+.benefits-about-section .countries{
+  background: url(/public/assets/videos/globe.gif);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.benefits-about-section .sleep{
+  background: url(/public/assets/videos/sleep.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.benefits-about-section .cases{
+  background: url(/public/assets/videos/cases.gif);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 
 /* ==============================
-   7. Responsive
+   Responsive
    ============================== */
 
-@media only screen and (max-width:1400px){
+@media only screen and (max-width:1400px) {}
 
-}
+@media only screen and (max-width:1200px) {}
 
-@media only screen and (max-width:1200px){
+@media only screen and (max-width:991px) {}
 
-}
+@media only screen and (max-width:767px) {}
 
-@media only screen and (max-width:991px){
+@media only screen and (max-width:575px) {}
 
-}
+@media only screen and (max-width:420px) {}
 
-@media only screen and (max-width:767px){
-
-}
-
-@media only screen and (max-width:575px){
-
-}
-
-@media only screen and (max-width:420px){
-
-}
-
-@media only screen and (max-width:350px){
-
-}
+@media only screen and (max-width:350px) {}

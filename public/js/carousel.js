@@ -3,6 +3,7 @@ const swiper = new Swiper(".mySwiper", {
     grabCursor: true,
     centeredSlides: true,
     initialSlide: 1,
+    loop: true,
     slidesPerView: "auto",
     coverflowEffect: {
         rotate: 50,

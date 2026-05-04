@@ -112,7 +112,7 @@
 
 .key-mission img,
 .key-values img {
-  right: 105%;
+  right: 100%;
 }
 
 .key-vision {
@@ -322,11 +322,11 @@
   }
 
   .swiper {
-    min-height: 200px;
+    min-height: 240px;
   }
 
   .swiper-slide {
-    width: 200px;
+    width: 240px;
   }
 
   .custodian-about-section h2 {
@@ -345,7 +345,7 @@
   }
 
   .keys-about-section span {
-    font-size: 26px;
+    font-size: 31px;
   }
 
   .benefits-about-section h2 {

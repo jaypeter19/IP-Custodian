@@ -1,0 +1,978 @@
+/* ==============================
+   5. Main Sections
+   ============================== */
+
+/* Hero */
+
+.hero-section {
+    background-color: var(--background-primary);
+    border-bottom-left-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
+}
+
+.hero-section .hero-text h1 {
+    font-family: var(--font-primary);
+    font-size: 74px;
+    font-weight: bold;
+    color: var(--black-primary);
+}
+
+.hero-text p {
+    font-size: 14px;
+}
+
+/* About */
+.about-section {
+    background-image: url(../../assets/images/about01.png);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.about-section h2 {
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 96px;
+    margin: 48px 0px 14px 0px;
+}
+
+.about-section h3 {
+    font-family: var(--font-tertiary);
+    font-weight: bold;
+    font-size: 32px;
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--blue-primary-normal) 24%,
+            var(--purple-primary-normal) 69%);
+    background-clip: text;
+    margin-bottom: 2rem;
+}
+
+.about-section p:not(.large) {
+    max-width: 780px;
+    font-size: 26px;
+    font-weight: 400;
+    text-align: justify;
+    padding: 0rem 8rem 0rem 8rem;
+}
+
+.about-section .large {
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    margin-top: 380px;
+}
+
+/* Video */
+
+.video-section {
+    position: relative;
+    background-image: url(../../assets/videos/IPCustodian.gif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 560px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video-section::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0.35);
+    z-index: 0;
+}
+
+.video-section .container-fluid {
+    position: relative;
+    z-index: 1;
+}
+
+.video-section h2 {
+    color: var(--white-primary);
+    font-size: 128px;
+}
+
+.video-section .btn-orange {
+    margin: 0;
+    width: 360px;
+    height: auto;
+    font-size: 42px;
+    font-weight: bolder;
+}
+
+/* Differentiators */
+
+.differentiatior-section {
+    background-color: var(--background-primary);
+    border-radius: var(--radius-lg);
+    height: 670px;
+    margin-top: 8rem;
+}
+
+
+.differentiatior-section .title h2 {
+    font-weight: bolder;
+    font-size: 128px;
+}
+
+.title span {
+    color: transparent;
+    background: linear-gradient(to bottom,
+            var(--purple-gradient) 50%,
+            var(--blue-primary-normal) 100%);
+    background-clip: text;
+    opacity: 58%;
+}
+
+.differentiatior-section .carousel .carousel-item {
+    padding-top: 45px;
+    padding-left: 45px;
+}
+
+.differentiatior-section .carousel .card {
+    position: relative;
+    background: transparent;
+    border-radius: var(--radius-xl);
+    border: 2px solid var(--black-primary);
+    color: var(--black-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 392px;
+    width: 100%;
+    margin: 1rem auto;
+    padding: 64px;
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.differentiatior-section .carousel .card:hover {
+    background-color: var(--black-primary);
+    color: var(--white-primary);
+}
+
+.differentiatior-section .carousel .card:hover h3,
+.differentiatior-section .carousel .card:hover p {
+    color: var(--white-primary);
+}
+
+.card h3 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.card p {
+    font-family: var(--font-tertiary);
+    font-size: 26px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+.card-icon img {
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    right: 85%;
+    top: -15%;
+    z-index: 2;
+}
+
+/* Services */
+
+.services-section h2 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.services-section .services-options {
+    margin-top: 68px;
+    width: 100%;
+}
+
+.services-options .renewals {
+    background-image: url(../../assets/images/services01.jpg);
+}
+
+.services-options .portfolio {
+    background-image: url(../../assets/images/services02.jpg);
+}
+
+.services-options .watch {
+    background-image: url(../../assets/images/services03.jpg);
+}
+
+.services-options .service-option {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 338px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.services-options .service-option::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0.35);
+    transition: background-color 0.25s ease;
+}
+
+.services-options .service-option:hover::before,
+.services-options .service-option:focus-within::before {
+    background-color: rgb(0, 0, 0, 0.9);
+}
+
+.services-options .service-option h3 {
+    position: relative;
+    z-index: 1;
+    color: var(--white-primary);
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: var(--text-shadow);
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.services-options .service-option:hover h3,
+.services-options .service-option:focus-within h3 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.services-options .service-actions {
+    position: absolute;
+    z-index: 1;
+    width: min(720px, 90%);
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+}
+
+.services-options .service-option:hover .service-actions,
+.services-options .service-option:focus-within .service-actions {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.services-options .service-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+    padding: 14px 18px;
+    border: 1px solid var(--white-primary);
+    color: var(--white-primary);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.services-options .service-actions a:hover,
+.services-options .service-actions a:focus {
+    background-color: var(--white-primary);
+    color: var(--black-primary);
+}
+
+.services-section p {
+    margin-bottom: 0;
+    font-family: var(--font-tertiary);
+    font-weight: 600;
+    color: var(--black-primary);
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.icon-trouble {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+}
+
+.services-section .btn-trouble {
+    margin: 138px auto;
+    background-color: var(--gray-primary);
+    font-family: var(--font-primary);
+    font-size: 28px;
+    color: var(--black-primary);
+    border-radius: 0;
+    box-shadow: var(--box-shadow-btn);
+}
+
+
+/* FAQ */
+
+.faq-section .faq-title {
+    position: relative;
+}
+
+.faq-section .faq-title h2 {
+    font-size: 64px;
+    font-weight: bolder;
+}
+
+.faq-section .faq-title p {
+    font-size: 24px;
+}
+
+.faq-section .faq-icon {
+    width: 214px;
+    height: 214px;
+    position: absolute;
+    right: 90%;
+    top: -15%;
+}
+
+.faq-section .faq-questions {
+    margin-top: 4rem;
+}
+
+.faq-questions .accordion {
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.faq-questions .accordion .accordion-item {
+    border: none;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+
+.faq-questions .accordion-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.faq-questions .accordion-button {
+    background-color: var(--background-primary);
+    color: var(--black-primary);
+    font-family: var(--font-tertiary);
+    font-weight: bold;
+    font-size: 24px;
+    transition: background-color 0.3s ease-in;
+}
+
+.faq-questions .accordion-button:hover {
+    background-color: var(--background-secondary);
+}
+
+.faq-questions .accordion-button:not(.collapsed) {
+    background-color: var(--blue-primary-normal);
+    color: var(--white-primary);
+    box-shadow: none;
+}
+
+.faq-questions .accordion-body {
+    background-color: var(--blue-primary-normal);
+    color: var(--white-primary);
+    border-bottom-left-radius: var(--radius-sm);
+    border-bottom-right-radius: var(--radius-sm);
+}
+
+/* Contact Us */
+
+.contact-section div:first-child {
+    position: relative;
+}
+
+.contact-section h2 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 57px;
+}
+
+.contact-section .reach ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.reach li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 23px;
+}
+
+.reach a {
+    font-family: var(--font-tertiary);
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--black-primary);
+    padding-left: 14px;
+}
+
+.reach .reach-img {
+    width: 480px;
+    height: auto;
+}
+
+/* ==============================
+   7. Responsive
+   ============================== */
+
+
+@media only screen and (max-width: 1400px) {
+
+    .faq-section .faq-icon {
+        right: 80%;
+    }
+
+    .faq-section .faq-title {
+        padding-left: 4rem;
+    }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+    .hero-section .hero-text h1 {
+        font-size: 58px;
+    }
+
+    .about-section p:not(.large) {
+        font-size: 20px;
+        padding: 0rem 10rem 0rem 10rem;
+    }
+
+    .about-section .large {
+        font-size: 54px;
+        margin-top: 100px;
+    }
+
+    .video-section .btn-orange {
+        max-width: 360px;
+    }
+
+    .differentiatior-section .carousel .carousel-item {
+        padding-left: 50px;
+    }
+
+    .differentiatior-section .title h2 {
+        font-size: 108px;
+    }
+
+    .differentiatior-section .carousel .card {
+        max-height: 395px;
+        max-width: 555px;
+    }
+
+    .card-icon img {
+        height: 110px;
+        width: 110px;
+        right: 86%;
+        top: -10%;
+    }
+
+    .card h3 {
+        font-size: 34px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+
+    .hero-section .hero-text h1 {
+        font-size: 44px;
+    }
+
+    .about-section h2 {
+        font-size: 76px;
+        margin: 32px 0px 14px 0px;
+    }
+
+    .about-section .large {
+        font-size: 40px;
+        margin-top: 50px;
+    }
+
+    .about-section p:not(.large) {
+        font-size: 18px;
+        padding: 0rem 8rem 0rem 8rem;
+        max-width: 720px;
+
+    }
+
+    .video-section h2 {
+        font-size: 98px;
+    }
+
+    .video-section .btn-orange {
+        font-size: 28px;
+        width: 280px;
+
+    }
+
+    .differentiatior-section {
+        height: 770px;
+    }
+
+    .differentiatior-section .title h2 {
+        font-size: 98px;
+        text-align: center;
+    }
+
+    .differentiatior-section .carousel .carousel-item {
+        padding-top: 25px;
+        padding-left: 25px;
+    }
+
+    .differentiatior-section .carousel .card {
+        height: 380px;
+    }
+
+    .card-icon img {
+        height: 100px;
+        width: 100px;
+        right: 88%;
+        top: -10%;
+    }
+
+    .card h3 {
+        font-size: 34px;
+    }
+
+    .faq-section .faq-title {
+        padding-left: 2rem;
+    }
+
+    .faq-section .faq-icon {
+        width: 140px;
+        height: 140px;
+        right: 80%;
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 54px;
+    }
+
+    .reach .reach-img {
+        width: 380px;
+        height: auto;
+    }
+
+    .reach a {
+        font-size: 22px;
+        padding-left: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .hero-section .hero-text h1 {
+        font-size: 68px;
+    }
+
+    .hero-text p {
+        font-size: 20px;
+    }
+
+    .hero-section .hero-image img {
+        max-width: 65%;
+        margin: 2rem auto;
+    }
+
+    .about-section h2 {
+        font-size: 60px;
+        margin: 28px 0px 14px 0px;
+    }
+
+    .about-section h3 {
+        font-size: 26px;
+    }
+
+    .about-section p:not(.large) {
+        font-size: 14px;
+        padding: 0rem 13rem 0rem 13rem;
+        max-width: 680px;
+
+    }
+
+    .about-section .large {
+        font-size: 26px;
+        margin-top: 0px;
+    }
+
+    .video-section h2 {
+        font-size: 88px;
+    }
+
+    .differentiatior-section {
+        height: 600px;
+    }
+
+    .differentiatior-section .title h2 {
+        font-size: 68px;
+        text-align: center;
+    }
+
+    .differentiatior-section .carousel .card {
+        height: 325px;
+        max-width: 440px;
+        padding: 34px;
+    }
+
+    .card-icon img {
+        height: 80px;
+        width: 80px;
+        right: 87%;
+    }
+
+    .services-section h2 {
+        font-size: 48px;
+    }
+
+    .services-options .service-option h3 {
+        font-size: 36px;
+    }
+
+    .services-section .btn-trouble {
+        font-size: 22px;
+    }
+
+    .faq-section .faq-title {
+        padding-left: 0rem;
+    }
+
+    .faq-section .faq-icon {
+        top: -4%;
+        right: 70%;
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 38px;
+    }
+
+    .faq-section .faq-title p {
+        font-size: 20px;
+    }
+
+    .faq-section .faq-questions {
+        margin-top: 24px;
+    }
+
+    .reach .reach-img {
+        margin-bottom: 32px;
+    }
+
+}
+
+@media only screen and (max-width: 575px) {
+
+    .hero-section .hero-text h1 {
+        font-size: 46px;
+        text-align: start;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+        text-align: start;
+    }
+
+    .hero-section .hero-image img {
+        max-width: 80%;
+        margin: 1.5rem auto;
+    }
+
+    .about-section {
+        background-image: url(../../assets/images/about02.png);
+        background-position-x: 102%;
+        background-position-y: 65%;
+        background-size: 40%;
+    }
+
+    .about-section h2 {
+        font-size: 48px;
+    }
+
+    .about-section h3 {
+        font-size: 22px;
+    }
+
+    .about-section p:not(.large) {
+        padding: 0px 200px 0px 0px;
+        font-size: 16px;
+    }
+
+    .about-section .large {
+        font-size: 18px;
+    }
+
+    .video-section {
+        height: 360px;
+    }
+
+    .video-section h2 {
+        font-size: 58px;
+    }
+
+    .video-section .btn-orange {
+        font-size: 24px;
+        width: 230px;
+    }
+
+    .differentiatior-section {
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .differentiatior-section .title h2 {
+        font-size: 45px;
+    }
+
+    .differentiatior-section .carousel .card {
+        height: 240px;
+        max-width: 350px;
+        margin: 1rem auto;
+    }
+
+    .card h3 {
+        font-size: 30px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .card-icon img {
+        height: 75px;
+        width: 75px;
+        left: -8%;
+        top: -10%;
+    }
+
+
+    .services-section h2 {
+        font-size: 38px;
+    }
+
+    .services-options .service-option h3 {
+        font-size: 32px;
+    }
+
+    .services-section p {
+        font-size: 17px;
+    }
+
+    .services-section .btn-trouble {
+        font-size: 16px;
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 30px;
+    }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+    .hero-section {
+        padding: var(--section-padding-sm);
+    }
+
+    .hero-section .hero-text {
+        text-align: center;
+    }
+
+    .hero-section .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .about-section {
+        background-image: url(../../assets/images/about02.png);
+        background-position-x: 105%;
+        background-position-y: 55%;
+    }
+
+    .about-section h2 {
+        font-size: 38px;
+        margin: 18px 0px 14px 0px;
+    }
+
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .about-section p:not(.large) {
+        padding: 0px 178px 0px 0px;
+        font-size: 11.5px;
+    }
+
+    .about-section .large {
+        font-size: 16px;
+    }
+
+    .video-section {
+        height: 260px;
+    }
+
+    .video-section h2 {
+        font-size: 48px;
+    }
+
+    .video-section .btn-orange {
+        font-size: 22px;
+        width: 200px;
+    }
+
+    .differentiatior-section {
+        margin-top: 2rem;
+        height: auto;
+    }
+
+    .differentiatior-section .title h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .card-icon img {
+        height: 80px;
+        width: 80px;
+        left: -9%;
+        top: -10%;
+    }
+
+    .services-section h2 {
+        font-size: 28px;
+    }
+
+    .services-options .service-option h3 {
+        font-size: 24px;
+    }
+
+    .services-section p {
+        font-size: 13px;
+    }
+
+    .icon-trouble {
+        width: 16px;
+        height: 16px;
+    }
+
+    .services-section .btn-trouble {
+        margin: 38px auto;
+        font-size: 13px;
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 22px;
+    }
+
+    .faq-section .faq-title p {
+        font-size: 14px;
+    }
+
+    .faq-questions .accordion-button {
+        font-size: 18px;
+    }
+
+    .faq-section .faq-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-section {
+        padding-bottom: 0px;
+    }
+
+    .contact-section h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .reach ul img {
+        height: 20px;
+    }
+
+    .reach a {
+        font-size: 18px;
+    }
+
+    .contact-section .custodian-logo {
+        height: 85px;
+        left: -2%;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+    .hero-section .hero-text h1 {
+        font-size: 33px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .video-section h2 {
+        font-size: 38px;
+    }
+
+    .differentiatior-section .carousel .card {
+        height: 220px;
+    }
+
+    .card-icon img {
+        height: 75px;
+        width: 75px;
+        left: -7%;
+        top: -15%;
+    }
+
+    .card h3 {
+        font-size: 22px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    .about-section {
+        background-image: url(../../assets/images/about02.png);
+        background-size: 54%;
+    }
+
+
+    .about-section p:not(.large) {
+        padding: 0px 155px 0px 0px;
+        font-size: 10.5px;
+    }
+
+    .about-section .large {
+        font-size: 15px;
+    }
+
+    .faq-section .faq-title p {
+        font-size: 18px;
+    }
+
+    .faq-questions .accordion-button {
+        font-size: 18px;
+    }
+
+}

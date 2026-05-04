@@ -1,0 +1,116 @@
+
+/* ==============================
+   6. Footer
+   ============================== */
+
+footer .container-fluid {
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--background-footer-primary);
+    padding: 60px;
+    color: var(--white-primary);
+}
+
+.footer-copyright {
+    background-color: var(--blue-primary-dark);
+    color: var(--white-primary);
+}
+
+.footer ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.footer li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.footer-contact a,
+.footer-menu a {
+    position: relative;
+}
+
+.footer-contact a::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--background-primary);
+    transition: all 0.25s ease;
+}
+
+.footer-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--background-primary);
+    transition: all 0.25s ease;
+}
+
+.footer-contact a:hover::after,
+.footer-menu a:hover::after {
+    width: 100%;
+}
+
+.footer-contact a:hover,
+.footer-menu a:hover {
+    color: var(--background-primary);
+}
+
+.footer h2 {
+    color: var(--white-primary);
+    font-size: 54px;
+    font-weight: bold;
+}
+
+.footer h3 {
+    font-family: var(--font-tertiary);
+    font-weight: bold;
+    font-size: 32px;
+    color: var(--white-primary);
+}
+
+.footer-contact a {
+    font-family: var(--font-tertiary);
+    font-size: 20px;
+    font-weight: 300;
+    padding-left: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    padding-right: 14px;
+    transition: all 0.25s ease;
+}
+
+.footer-social a:hover img {
+    opacity: 0.8;
+}
+
+.footer-copyright p {
+    display: inline-block;
+    margin: 0;
+    padding: 12px 34px;
+}
+
+.footer-copyright a,
+.footer-copyright p {
+    font-family: var(--font-tertiary);
+    font-weight: 400;
+    font-size: 18px;
+    transition: color 0.25s ease;
+}
+
+.footer-copyright a:hover {
+    color: var(--background-primary);
+}

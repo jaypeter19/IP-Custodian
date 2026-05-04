@@ -1,0 +1,43 @@
+
+.btn-orange,
+.btn-blue {
+    min-width: 120px;
+    width: 235px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.btn-orange {
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: var(--orange-primary-normal);
+    border-radius: var(--radius-sm);
+    margin-right: 1rem;
+    box-shadow: var(--box-shadow-btn);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.btn-orange:hover {
+    background-color: var(--white-primary-hover);
+    color: var(--orange-primary-normal);
+}
+
+.btn-blue {
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 24px;
+    background-color: var(--blue-primary-normal);
+    border-radius: var(--radius-sm);
+    height: auto;
+    box-shadow: var(--box-shadow-btn);
+    transition: background-color 0.3s ease-in, color 0.3s ease-in;
+}
+
+.btn-blue:hover {
+    background-color: var(--white-primary-hover);
+    color: var(--blue-primary-normal);
+}

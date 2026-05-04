@@ -489,7 +489,8 @@ section {
     transition: background-color 0.25s ease;
 }
 
-.services-options .service-option:hover::before {
+.services-options .service-option:hover::before,
+.services-options .service-option:focus-within::before {
     background-color: rgb(0, 0, 0, 0.9);
 }
 
@@ -501,6 +502,51 @@ section {
     font-weight: 700;
     text-align: center;
     text-shadow: var(--text-shadow);
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.services-options .service-option:hover h3,
+.services-options .service-option:focus-within h3 {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.services-options .service-actions {
+    position: absolute;
+    z-index: 1;
+    width: min(720px, 90%);
+    margin: 0;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(12px);
+    transition: opacity 0.25s ease, visibility 0.25s ease, transform 0.25s ease;
+}
+
+.services-options .service-option:hover .service-actions,
+.services-options .service-option:focus-within .service-actions {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.services-options .service-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 56px;
+    padding: 14px 18px;
+    border: 1px solid var(--white-primary);
+    color: var(--white-primary);
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.services-options .service-actions a:hover,
+.services-options .service-actions a:focus {
+    background-color: var(--white-primary);
+    color: var(--black-primary);
 }
 
 .services-section p {
@@ -513,8 +559,8 @@ section {
 }
 
 .icon-trouble {
-    width: 40px;
-    height: 40px;
+    width: 32px;
+    height: 32px;
     display: inline-block;
 }
 
@@ -655,10 +701,10 @@ section {
 
 .reach a {
     font-family: var(--font-tertiary);
-    font-size: 32px;
+    font-size: 26px;
     font-weight: 300;
     color: var(--black-primary);
-    padding-left: 16px;
+    padding-left: 14px;
 }
 
 .reach .reach-img {
@@ -675,7 +721,7 @@ section {
 .contact-section .form label {
     font-size: var(--font-tertiary);
     font-weight: 300;
-    font-size: 24px;
+    font-size: 22px;
     color: var(--black-primary);
 }
 
@@ -977,12 +1023,22 @@ p {
         font-size: 54px;
     }
 
+    .reach .reach-img {
+        width: 380px;
+        height: auto;
+    }
+
     .contact-section .form {
         margin: 0px;
+        padding: 36px;
+    }
+
+    .contact-section .form label {
+        font-size: 20px;
     }
 
     .reach a {
-        font-size: 24px;
+        font-size: 22px;
         padding-left: 12px;
     }
 
@@ -992,6 +1048,11 @@ p {
 
     .footer h3 {
         font-size: 26px;
+    }
+
+    .footer-contact a {
+        font-size: 16px;
+        padding-left: 8px;
     }
 
 }
@@ -1084,6 +1145,10 @@ p {
         font-size: 48px;
     }
 
+    .services-options .service-option h3 {
+        font-size: 36px;
+    }
+
     .services-section .btn-trouble {
         font-size: 22px;
     }
@@ -1114,11 +1179,13 @@ p {
         margin-top: 24px;
     }
 
-
-    .footer {
-        padding: 30px;
+    .reach .reach-img {
+        margin-bottom: 32px;
     }
 
+    .contact-section .form {
+        padding: 56px;
+    }
 
 }
 
@@ -1151,6 +1218,13 @@ p {
         margin: 1.5rem auto;
     }
 
+    .about-section {
+        background-image: url(../assets/images/about02.png);
+        background-position-x: 102%;
+        background-position-y: 65%;
+        background-size: 40%;
+    }
+
     .about-section h2 {
         font-size: 48px;
     }
@@ -1160,11 +1234,12 @@ p {
     }
 
     .about-section p:not(.large) {
-        padding: 0rem 7rem 0rem 7rem;
+        padding: 0px 200px 0px 0px;
+        font-size: 16px;
     }
 
     .about-section .large {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .video-section h2 {
@@ -1229,6 +1304,20 @@ p {
 
 }
 
+@media only screen and (max-width: 490px) {
+    .about-section {
+        background-image: url(../assets/images/about02.png);
+        background-position-x: 105%;
+        background-position-y: 65%;
+        background-size: 52%;
+    }
+
+    .about-section p:not(.large) {
+        padding: 0px 212px 0px 0px;
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width: 420px) {
 
     section {
@@ -1261,6 +1350,12 @@ p {
         font-size: 16px;
     }
 
+    .about-section {
+        background-image: url(../assets/images/about02.png);
+        background-position-x: 105%;
+        background-position-y: 55%;
+    }
+
     .about-section h2 {
         font-size: 38px;
         margin: 18px 0px 14px 0px;
@@ -1271,8 +1366,12 @@ p {
     }
 
     .about-section p:not(.large) {
+        padding: 0px 178px 0px 0px;
+        font-size: 11.5px;
+    }
+
+    .about-section .large {
         font-size: 16px;
-        padding: 0;
     }
 
     .video-section h2 {
@@ -1309,28 +1408,31 @@ p {
         top: -10%;
     }
 
-
     .services-section h2 {
         font-size: 28px;
     }
 
-    .icon-trouble {
-        width: 20px;
-        height: 20px;
+    .services-options .service-option h3 {
+        font-size: 24px;
     }
 
+    .services-section p {
+        font-size: 13px;
+    }
+
+    .icon-trouble {
+        width: 16px;
+        height: 16px;
+    }
 
     .services-section .btn-trouble {
         margin: 38px auto;
+        font-size: 13px;
     }
 
     .map-section h2 {
         font-size: 20px;
         text-align: center;
-    }
-
-    #map {
-        height: 225px;
     }
 
     .faq-section .faq-title h2 {
@@ -1393,7 +1495,7 @@ p {
     }
 
     .footer-contact a {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .footer-copyright a,
@@ -1455,6 +1557,21 @@ p {
 
     .card p {
         font-size: 14px;
+    }
+
+    .about-section {
+        background-image: url(../assets/images/about02.png);
+        background-size: 54%;
+    }
+
+
+    .about-section p:not(.large) {
+        padding: 0px 155px 0px 0px;
+        font-size: 10.5px;
+    }
+
+    .about-section .large {
+        font-size: 15px;
     }
 
     .map-section h2 {

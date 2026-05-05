@@ -1,0 +1,273 @@
+/* ==============================
+   Main Sections
+   ============================== */
+
+.form-section h1 {
+    font-size: 128px;
+    font-weight: 600;
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--blue-primary-normal) 0%,
+            var(--purple-primary-normal) 100%);
+    background-clip: text;
+}
+
+.form-section p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.form-section img {
+    height: 600px;
+    max-height: 600px;
+    width: auto;
+}
+
+.form-section .form {
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-sm);
+    padding: 66px;
+}
+
+.details-section {
+    background-color: var(--background-primary);
+    border-radius: var(--radius-lg);
+}
+
+.details-section h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 58px;
+}
+
+.details-section ul {
+    list-style-type: none;
+    background-color: var(--background-secondary);
+    border-radius: var(--radius-md);
+    padding: 30px;
+    width: 85%;
+}
+
+.details-section li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.details-section li>img {
+    width: 35px;
+    height: 35px;
+    margin: 15px 16px;
+}
+
+.details-section a {
+    position: relative;
+    font-family: var(--font-tertiary);
+    font-size: 23px;
+    color: var(--black-primary);
+}
+
+.details-section a::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -3px;
+    width: 0;
+    height: 2px;
+    background-color: var(--background-footer-primary);
+    transition: all 0.25s ease;
+}
+
+.details-section a:hover::after {
+    width: 100%;
+}
+
+/* pricing */
+
+.pricing-section h2 {
+    font-size: 64px;
+    font-weight: 400;
+}
+
+.pricing-section .pricing-options {
+    margin-top: 116px;
+
+}
+
+.pricing-options .accordion {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.pricing-options .accordion .accordion-item {
+    border: none;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+}
+
+.pricing-options .accordion-button {
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    height: 110px;
+    font-size: 24px;
+    background-color: var(--orange-primary-normal);
+    color: var(--white-primary);
+    font-family: var(--font-tertiary);
+    font-weight: bold;
+    transition: background-color 0.3s ease-in;
+}
+
+.pricing-options .accordion-button::after {
+    position: absolute;
+    right: 40px;
+    margin-left: 0;
+    width: 24px;
+    height: 24px;
+    background-size: 24px;
+}
+
+
+/* ==============================
+   Responsive
+   ============================== */
+
+@media only screen and (max-width:1400px) {}
+
+@media only screen and (max-width:1200px) {
+
+    .form-section h1 {
+        font-size: 98px;
+    }
+
+    .form-section p {
+        font-size: 14px;
+    }
+
+    .form-section .form {
+        padding: 46px;
+    }
+
+
+    .details-section h2 {
+        font-size: 54px;
+    }
+
+    .details-section ul {
+        width: 90%;
+    }
+
+    .details-section a {
+        font-size: 20px;
+    }
+
+}
+
+@media only screen and (max-width:991px) {
+
+    .form-section h1 {
+        font-size: 78px;
+    }
+
+    .form-section img {
+        height: 450px;
+    }
+
+    .details-section h2 {
+        font-size: 44px;
+    }
+
+    .details-section ul {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .details-section li>img {
+        margin: 15px 8px;
+    }
+
+    .pricing-section h2 {
+        font-size: 44px;
+    }
+
+}
+
+@media only screen and (max-width:767px) {
+    .details-section {
+        width: 90%;
+        margin: 0rem auto;
+    }
+
+    .details-section ul {
+        width: 80%;
+    }
+
+    .details-section img {
+        max-width: 80%;
+        margin: 0rem auto;
+    }
+
+    .pricing-section .pricing-options {
+        margin-top: 86px;
+    }
+}
+
+@media only screen and (max-width:575px) {
+
+    .details-section ul {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .form-section img {
+        height: auto;
+    }
+
+    .form-section .form {
+        padding: 16px;
+    }
+
+    .details-section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .details-section h2 {
+        font-size: 34px;
+    }
+
+    .details-section ul {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .details-section img {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .details-section a {
+        font-size: 16px;
+    }
+
+    .form-section .btn-blue {
+        max-width: 160px;
+    }
+
+    .pricing-section h2 {
+        font-size: 34px;
+    }
+
+    .pricing-section .pricing-options {
+        margin-top: 56px;
+    }
+}
+
+
+@media only screen and (max-width:350px) {
+    .form-section h1 {
+        font-size: 58px;
+    }
+}

@@ -4,6 +4,9 @@ if (!window.MAPBOX_ACCESS_TOKEN) {
 
 mapboxgl.accessToken = window.MAPBOX_ACCESS_TOKEN;
 
+const mapboxScriptUrl = new URL(document.currentScript.src);
+const geojsonUrl = new URL('../json/geojson.json', mapboxScriptUrl);
+
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/jptelles19/cmnz4m2lt008r01qu2a5095j9',
@@ -11,8 +14,14 @@ const map = new mapboxgl.Map({
     zoom: 2
 });
 
-fetch('public/json/geojson.json')
-    .then((response) => response.json())
+fetch(geojsonUrl)
+    .then((response) => {
+        if (!response.ok) {
+            throw new Error(`Failed to load map data: ${response.status}`);
+        }
+
+        return response.json();
+    })
     .then((geojson) => {
         for (const feature of geojson.features) {
             const el = document.createElement('div');
@@ -28,4 +37,5 @@ fetch('public/json/geojson.json')
                 )
                 .addTo(map);
         }
-    });
+    })
+    .catch((error) => console.error(error));

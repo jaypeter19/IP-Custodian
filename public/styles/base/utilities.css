@@ -1,6 +1,9 @@
 .ip-dark {
     color: var(--blue-primary-dark);
 }
+.ip-darker {
+    color: var(--blue-primary-darker);
+}
 
 .gradient-good {
     color: transparent;

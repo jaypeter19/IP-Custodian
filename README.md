@@ -29,8 +29,4 @@ In Development
 
 ## Developed By
 
-<<<<<<< HEAD
-João Pedro Telles Fava
-=======
 João Pedro Telles
->>>>>>> development

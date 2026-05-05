@@ -87,6 +87,7 @@
 .keys-about-section p {
   font-size: 14px;
   font-weight: 600;
+  line-height: var(--line-height-small);
 }
 
 .keys-about-section span {
@@ -101,6 +102,16 @@
   position: absolute;
 }
 
+.keys-about-section .values-list {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+.keys-about-section .values-list li {
+  font-size: 16px;
+  font-weight: 600;
+  text-align: end;
+}
 
 .key-mission {
   color: transparent;
@@ -111,8 +122,12 @@
 }
 
 .key-mission img,
+.key-vision img {
+  right: 102%;
+}
+
 .key-values img {
-  right: 100%;
+  left: 102%;
 }
 
 .key-vision {
@@ -221,7 +236,7 @@
   .keys-about-section img {
     width: 58px;
     height: auto;
-    bottom: 50%;
+    bottom: 40%;
   }
 
   .keys-about-section span {
@@ -338,14 +353,22 @@
   }
 
   .keys-about-section img {
-    right: 0%;
-    left: 100%;
-    bottom: 60%;
     width: 28px;
   }
 
   .keys-about-section span {
     font-size: 31px;
+  }
+
+  .keys-about-section p {
+    text-align: justify;
+    font-size: 12px;
+  }
+
+  .key-values img {
+    bottom: 30%;
+    left: 105%;
+
   }
 
   .benefits-about-section h2 {

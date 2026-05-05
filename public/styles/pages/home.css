@@ -719,7 +719,7 @@
 
     .about-section {
         background-image: url(../../assets/images/about02.png);
-        background-position-x: 105%;
+        background-position-x: 107%;
         background-position-y: center;
         background-size: 48%;
     }
@@ -784,7 +784,7 @@
     }
 
     .faq-section .faq-icon {
-        top: -4%;
+        top: -3%;
         right: 70%;
     }
 
@@ -912,6 +912,13 @@
         font-size: 30px;
     }
 
+    .faq-section .faq-icon {
+        top: 0%;
+        right: 70%;
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -925,7 +932,7 @@
     }
 
     .hero-section .hero-text h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .hero-text p {
@@ -947,7 +954,7 @@
 
     .about-section .large {
         margin: 0;
-        font-size: 28px;
+        font-size: 18px;
     }
 
     .video-section {
@@ -1000,13 +1007,12 @@
         font-size: 13px;
     }
 
-    .icon-trouble {
-        width: 16px;
-        height: 16px;
+    #icon-trouble {
+        max-width: 100%;
     }
 
     .services-section .btn-trouble {
-        margin: 38px auto;
+        margin: 8px auto;
         font-size: 13px;
     }
 
@@ -1014,8 +1020,7 @@
         font-size: 22px;
     }
 
-
-    .faq-questions .accordion-button {
+    .faq-section .faq-title p {
         font-size: 18px;
     }
 
@@ -1044,7 +1049,8 @@
     }
 
     .reach a {
-        font-size: 18px;
+        padding: 0;
+        font-size: 14px;
     }
 
     .contact-section .custodian-logo {
@@ -1081,6 +1087,10 @@
 
     .card p {
         font-size: 14px;
+    }
+
+    .faq-section .faq-title p {
+        font-size: 16px;
     }
 
     .faq-questions .accordion-button {

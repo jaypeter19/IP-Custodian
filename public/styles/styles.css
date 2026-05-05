@@ -115,12 +115,6 @@
 
 }
 
-@media only screen and (max-width: 602px) {
-    .about-section p:not(.large) {
-        padding: 0rem 11rem 0rem 11rem;
-    }
-}
-
 @media only screen and (max-width: 575px) {
 
     .btn-orange,
@@ -129,20 +123,6 @@
         font-size: 18px;
     }
 
-}
-
-@media only screen and (max-width: 490px) {
-    .about-section {
-        background-image: url(../assets/images/about02.png);
-        background-position-x: 105%;
-        background-position-y: 65%;
-        background-size: 52%;
-    }
-
-    .about-section p:not(.large) {
-        padding: 0px 212px 0px 0px;
-        font-size: 14px;
-    }
 }
 
 @media only screen and (max-width: 420px) {

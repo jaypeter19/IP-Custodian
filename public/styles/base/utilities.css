@@ -2,8 +2,28 @@
     color: var(--blue-primary-dark);
 }
 
-.ip-darker {
-    color: var(--blue-primary-darker);
+.gradient-good {
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--purple-primary-normal) 24%,
+            var(--blue-primary-normal) 69%);
+    background-clip: text;
+}
+
+.gradient-fast {
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--red-gradient) 0%,
+            var(--yellow-gradient) 75%);
+    background-clip: text;
+}
+
+.gradient-easy {
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--green-gradient) 0%,
+            var(--cyan-gradient) 75%);
+    background-clip: text;
 }
 
 

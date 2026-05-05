@@ -719,7 +719,7 @@
 
     .about-section {
         background-image: url(../../assets/images/about02.png);
-        background-position-x: 105%;
+        background-position-x: 107%;
         background-position-y: center;
         background-size: 48%;
     }
@@ -784,7 +784,7 @@
     }
 
     .faq-section .faq-icon {
-        top: -4%;
+        top: -3%;
         right: 70%;
     }
 
@@ -912,6 +912,13 @@
         font-size: 30px;
     }
 
+    .faq-section .faq-icon {
+        top: 0%;
+        right: 70%;
+        width: 100px;
+        height: 100px;
+    }
+
 }
 
 @media only screen and (max-width: 420px) {
@@ -947,7 +954,7 @@
 
     .about-section .large {
         margin: 0;
-        font-size: 28px;
+        font-size: 18px;
     }
 
     .video-section {

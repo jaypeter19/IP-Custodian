@@ -107,7 +107,7 @@
     background-image: url(../../assets/images/about01.png);
     background-position-x: center;
     background-position-y: center;
-    background-size: contain;
+    background-size: 110%;
     background-repeat: no-repeat;
 }
 
@@ -135,14 +135,14 @@
     font-size: 26px;
     font-weight: 400;
     text-align: justify;
-    padding: 0rem 8rem 0rem 8rem;
+    padding: 0rem 105px 0rem 105px;
 }
 
 .about-section .large {
     text-align: center;
     font-size: 64px;
     font-weight: 700;
-    margin-top: 380px;
+    margin-top: 180px;
 }
 
 /* Video */
@@ -248,7 +248,7 @@
 
 .card p {
     font-family: var(--font-tertiary);
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 500;
     text-align: justify;
 }
@@ -390,6 +390,7 @@
 
 #icon-trouble {
     transform-origin: center;
+    max-width: 60%;
 }
 
 .icon-animation {
@@ -447,6 +448,7 @@
 
 .faq-section .faq-questions {
     margin-top: 4rem;
+    padding: 0 12px 0 0;
 }
 
 .faq-questions .accordion {
@@ -491,7 +493,7 @@
 }
 
 .faq-questions .accordion-body p {
-   font-size: 18px;
+    font-size: 18px;
 }
 
 /* Contact Us */
@@ -520,12 +522,16 @@
 
 .reach a {
     font-family: var(--font-tertiary);
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 300;
     color: var(--black-primary);
     padding-left: 14px;
 }
 
+.reach img {
+    width: 40px;
+    height: 40px;
+}
 .reach .reach-img {
     width: 480px;
     height: auto;
@@ -537,6 +543,20 @@
 
 
 @media only screen and (max-width: 1400px) {
+
+
+    .about-section {
+        background-size: 116%;
+    }
+
+    .about-section p:not(.large) {
+        font-size: 22px;
+        padding: 0rem 105px 0rem 105px;
+    }
+
+    .faq-questions .accordion-button {
+        font-size: 14px;
+    }
 
     .faq-section .faq-icon {
         right: 80%;
@@ -551,7 +571,11 @@
 @media only screen and (max-width: 1200px) {
 
     .hero-section .hero-text h1 {
-        font-size: 58px;
+        font-size: 62px;
+    }
+
+    .about-section {
+        background-size: 100%;
     }
 
     .about-section p:not(.large) {
@@ -561,7 +585,7 @@
 
     .about-section .large {
         font-size: 54px;
-        margin-top: 100px;
+        margin-top: 50px;
     }
 
     .video-section .btn-orange {
@@ -592,12 +616,17 @@
         font-size: 34px;
     }
 
+
+    .faq-questions .accordion-button {
+        font-size: 13px;
+    }
+
 }
 
 @media only screen and (max-width: 991px) {
 
-    .hero-section .hero-text h1 {
-        font-size: 44px;
+    .about-section {
+        background-size: 116%;
     }
 
     .about-section h2 {
@@ -612,7 +641,7 @@
 
     .about-section p:not(.large) {
         font-size: 18px;
-        padding: 0rem 8rem 0rem 8rem;
+        padding: 0rem 6rem 0rem 6rem;
         max-width: 720px;
 
     }
@@ -670,52 +699,47 @@
         font-size: 54px;
     }
 
+    .faq-questions .accordion-button {
+        font-size: 12px;
+    }
+
     .reach .reach-img {
         width: 380px;
         height: auto;
     }
 
     .reach a {
-        font-size: 22px;
-        padding-left: 12px;
+        font-size: 17px;
+        padding-left: 10px;
     }
 
 }
 
 @media only screen and (max-width: 767px) {
 
-    .hero-section .hero-text h1 {
-        font-size: 68px;
-    }
-
-    .hero-text p {
-        font-size: 20px;
-    }
-
-    .hero-section .hero-image img {
-        max-width: 65%;
-        margin: 2rem auto;
+    .about-section {
+        background-image: url(../../assets/images/about02.png);
+        background-position-x: 105%;
+        background-position-y: center;
+        background-size: 48%;
     }
 
     .about-section h2 {
-        font-size: 60px;
-        margin: 28px 0px 14px 0px;
+        font-size: 48px;
     }
 
     .about-section h3 {
-        font-size: 26px;
+        font-size: 22px;
     }
 
     .about-section p:not(.large) {
-        font-size: 14px;
-        padding: 0rem 13rem 0rem 13rem;
-        max-width: 680px;
-
+        padding: 0px 155px 0px 0px;
+        font-size: 16px;
+        max-width: 450px;
     }
 
     .about-section .large {
-        font-size: 26px;
-        margin-top: 0px;
+        font-size: 28px;
     }
 
     .video-section h2 {
@@ -790,8 +814,8 @@
     }
 
     .hero-text p {
-        font-size: 16px;
         text-align: start;
+        padding: 0;
     }
 
     .hero-section .hero-image img {
@@ -801,9 +825,8 @@
 
     .about-section {
         background-image: url(../../assets/images/about02.png);
-        background-position-x: 102%;
-        background-position-y: 65%;
-        background-size: 40%;
+        background-position-y: center;
+        background-size: 48%;
     }
 
     .about-section h2 {
@@ -815,11 +838,13 @@
     }
 
     .about-section p:not(.large) {
-        padding: 0px 200px 0px 0px;
-        font-size: 16px;
+        padding: 0px 160px 0px 0px;
+        font-size: 13px;
+        max-width: 380px;
     }
 
     .about-section .large {
+        margin: 0;
         font-size: 18px;
     }
 
@@ -846,7 +871,7 @@
     }
 
     .differentiatior-section .carousel .card {
-        height: 240px;
+        height: 280px;
         max-width: 350px;
         margin: 1rem auto;
     }
@@ -900,35 +925,29 @@
     }
 
     .hero-section .hero-text h1 {
-        font-size: 38px;
+        font-size: 40px;
     }
 
     .hero-text p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .about-section {
-        background-image: url(../../assets/images/about02.png);
-        background-position-x: 105%;
-        background-position-y: 55%;
+        background-image: none;
     }
 
     .about-section h2 {
-        font-size: 38px;
-        margin: 18px 0px 14px 0px;
-    }
-
-    .about-section h3 {
-        font-size: 20px;
+        font-size: 42px;
     }
 
     .about-section p:not(.large) {
-        padding: 0px 178px 0px 0px;
-        font-size: 11.5px;
+        padding: 0px;
+        font-size: 16px;
     }
 
     .about-section .large {
-        font-size: 16px;
+        margin: 0;
+        font-size: 28px;
     }
 
     .video-section {
@@ -995,15 +1014,18 @@
         font-size: 22px;
     }
 
-    .faq-section .faq-title p {
-        font-size: 14px;
-    }
 
     .faq-questions .accordion-button {
         font-size: 18px;
     }
 
+    .accordion-body li,
+    .accordion-body p {
+        font-size: 14px;
+    }
+
     .faq-section .faq-icon {
+        top: 0%;
         width: 80px;
         height: 80px;
     }
@@ -1035,11 +1057,7 @@
 @media only screen and (max-width: 350px) {
 
     .hero-section .hero-text h1 {
-        font-size: 33px;
-    }
-
-    .hero-text p {
-        font-size: 14px;
+        font-size: 32px;
     }
 
     .video-section h2 {
@@ -1047,7 +1065,7 @@
     }
 
     .differentiatior-section .carousel .card {
-        height: 220px;
+        height: 250px;
     }
 
     .card-icon img {
@@ -1065,27 +1083,13 @@
         font-size: 14px;
     }
 
-    .about-section {
-        background-image: url(../../assets/images/about02.png);
-        background-size: 54%;
-    }
-
-
-    .about-section p:not(.large) {
-        padding: 0px 155px 0px 0px;
-        font-size: 10.5px;
-    }
-
-    .about-section .large {
-        font-size: 15px;
-    }
-
-    .faq-section .faq-title p {
-        font-size: 18px;
-    }
-
     .faq-questions .accordion-button {
-        font-size: 18px;
+        font-size: 14px;
+    }
+
+    .accordion-body li,
+    .accordion-body p {
+        font-size: 13px;
     }
 
 }

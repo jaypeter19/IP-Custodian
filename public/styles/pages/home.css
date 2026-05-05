@@ -925,7 +925,7 @@
     }
 
     .hero-section .hero-text h1 {
-        font-size: 40px;
+        font-size: 38px;
     }
 
     .hero-text p {
@@ -1000,13 +1000,12 @@
         font-size: 13px;
     }
 
-    .icon-trouble {
-        width: 16px;
-        height: 16px;
+    #icon-trouble {
+        max-width: 100%;
     }
 
     .services-section .btn-trouble {
-        margin: 38px auto;
+        margin: 8px auto;
         font-size: 13px;
     }
 
@@ -1014,8 +1013,7 @@
         font-size: 22px;
     }
 
-
-    .faq-questions .accordion-button {
+    .faq-section .faq-title p {
         font-size: 18px;
     }
 
@@ -1044,7 +1042,8 @@
     }
 
     .reach a {
-        font-size: 18px;
+        padding: 0;
+        font-size: 14px;
     }
 
     .contact-section .custodian-logo {
@@ -1081,6 +1080,10 @@
 
     .card p {
         font-size: 14px;
+    }
+
+    .faq-section .faq-title p {
+        font-size: 16px;
     }
 
     .faq-questions .accordion-button {

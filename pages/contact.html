@@ -43,7 +43,15 @@
                 <div class="collapse navbar-collapse justify-content-evenly" id="navbarMenu">
                     <div class="navbar-nav menu">
                         <a class="nav-link" href="../index.html">Home</a>
-                        <a class="nav-link" href="#">Solutions</a>
+                        <div class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">Solutions</a>
+                            <ul class="dropdown-menu dropdown-menu-center">
+                                <li><a class="dropdown-item" href="./renewals.html">Renewals</a></li>
+                                <li><a class="dropdown-item" href="./portfolio.html">Portfolio Management</a></li>
+                                <li><a class="dropdown-item" href="./watch.html">Enforcement +</a></li>
+                            </ul>
+                        </div>
                         <a class="nav-link" href="./about.html">About us</a>
                     </div>
                     <div class="navbar-nav contact">
@@ -196,7 +204,7 @@
 
         <section class="map-section">
             <div class="container-fluid">
-                <h2>Where We Work.</h2>
+                <h2>You will find us, and we will help you.</h2>
             </div>
             <div id="map">
 
@@ -255,6 +263,7 @@
     <!-- Mapbox GL JS -->
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.js"></script>
     <!-- JS Scripts -->
+    <script src="../public/js/index.js"></script>
     <script src="../public/js/config.js"></script>
     <script src="../public/js/mapbox.js"></script>
     <script src="../public/js/forms.js"></script>

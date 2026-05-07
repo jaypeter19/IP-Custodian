@@ -1,0 +1,225 @@
+/* ==============================
+   Main Sections
+   ============================== */
+
+
+/* Hero */
+.hero-renewals-section {
+    min-height: 500px;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    overflow: hidden;
+    border-bottom-right-radius: var(--radius-lg);
+    border-bottom-left-radius: var(--radius-lg);
+}
+
+.hero-renewals-section::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    background: url(../../assets/images/services01.jpg);
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.hero-renewals-section h1 {
+    margin: 0;
+    position: absolute;
+    bottom: -8%;
+    z-index: 1;
+    font-size: 128px;
+    font-weight: bold;
+    color: var(--white-primary);
+}
+
+.about-renewals-section {
+    border-radius: var(--radius-lg);
+    background-color: var(--background-primary);
+} 
+
+.about-renewals-section .container-fluid {
+    width: 100%;
+    max-width: none;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.about-renewals-section h2 {
+    margin-bottom: 80px;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+
+.about-renewals-section .renewals-diy,
+.about-renewals-section .renewals-handle {
+    overflow: hidden;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* border-radius: var(--radius-md); */
+    color: var(--white-primary);
+    padding: 34px;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+}
+
+.about-renewals-section .renewals-diy {
+    background-image: url(../../assets/images/services06.jpg);
+}
+
+.about-renewals-section .renewals-handle {
+    background-image: url(../../assets/images/services07.jpg);
+}
+
+.about-renewals-section .renewals-diy::before,
+.about-renewals-section .renewals-handle::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    background: rgb(0, 0, 0, 0.65);
+    z-index: 0;
+}
+
+.about-renewals-section .renewals-diy .row,
+.about-renewals-section .renewals-handle .row {
+    position: relative;
+    z-index: 1;
+}
+
+.about-renewals-section .renewals-diy h3,
+.about-renewals-section .renewals-handle h3 {
+    color: var(--blue-primary-normal);
+    text-align: start;
+    font-size: 64px;
+}
+
+.about-renewals-section .renewals-diy h4,
+.about-renewals-section .renewals-handle h4 {
+    color: var(--white-primary);
+    text-align: start;
+    font-size: 34px;
+}
+
+
+.about-renewals-section .renewals-diy ul,
+.about-renewals-section .renewals-handle ul {
+    margin: 18px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.about-renewals-section .renewals-diy li,
+.about-renewals-section .renewals-handle li {
+    font-size: 14px;
+    font-family: var(--font-primary);
+}
+
+.about-renewals-section .renewals-diy li::before, 
+.about-renewals-section .renewals-handle li::before {
+    content: "\2713";
+    color: var(--orange-primary-normal);
+    padding-right: 18px;
+}
+
+.cta-services-section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.cta-services-section .container-fluid {
+    width: min(100%, var(--container-max-width));
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.cta-services-section .row {
+    min-height: 430px;
+    padding: clamp(3rem, 7vw, 5.5rem) 1.5rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white-primary);
+    background: linear-gradient(135deg,
+            var(--blue-primary-darker) 0%,
+            var(--blue-primary-dark) 100%);
+    border-radius: var(--radius-lg);
+}
+
+.cta-services-section .col-8 {
+    width: min(100%, 850px);
+    flex: 0 0 auto;
+}
+
+.cta-services-section h2 {
+    margin-bottom: 36px;
+    color: var(--white-primary);
+    font-size: clamp(2.25rem, 5vw, 4rem);
+    font-weight: 800;
+}
+
+.cta-services-section p {
+    max-width: 760px;
+    margin: 0 auto 44px;
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-weight: 500;
+    line-height: var(--line-height-base);
+}
+
+
+
+/* 
+
+OLD STYLES 
+.box-diy,
+.box-handle {
+    border-radius: var(--radius-lg);
+    margin-bottom: 120px;
+}
+
+.box-diy h3 {
+    margin-bottom: 16px;
+    font-size: 54px;
+    font-weight: bolder;
+    text-align: start;
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--blue-primary-normal) 0%,
+            var(--purple-primary-normal) 100%);
+    background-clip: text;
+}
+
+.box-diy p {
+    font-size: 18px;
+    font-family: var(--font-primary);
+}
+
+.box-diy h4 {
+    color: var(--purple-primary-normal);
+    font-size: 24px;
+}
+
+.box-diy ul {
+    margin: 18px auto;
+    padding: 0;
+    list-style: none;
+}
+
+.box-diy li {
+    font-size: 14px;
+    font-family: var(--font-primary);
+}
+
+.box-diy li::before {
+    content: "\2713";
+    color: var(--purple-primary-normal);
+    padding-right: 18px;
+} */

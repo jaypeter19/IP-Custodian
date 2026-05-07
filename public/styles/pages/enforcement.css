@@ -4,7 +4,7 @@
 
 
 /* Hero */
-.hero-portfolio-section {
+.hero-enforcement-section {
     min-height: 500px;
     display: flex;
     align-items: flex-end;
@@ -14,11 +14,11 @@
     border-bottom-left-radius: var(--radius-lg);
 }
 
-.hero-portfolio-section::before {
+.hero-enforcement-section::before {
     content: "";
     position: absolute;
     inset: -8px;
-    background: url(../../assets/images/services02.jpg);
+    background: url(../../assets/images/services03.jpg);
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
@@ -26,7 +26,7 @@
     z-index: 0;
 }
 
-.hero-portfolio-section h1 {
+.hero-enforcement-section h1 {
     margin: 0;
     position: absolute;
     bottom: -8%;
@@ -36,27 +36,27 @@
     color: var(--white-primary);
 }
 
-.about-portfolio-section {
+.about-enforcement-section {
     border-radius: var(--radius-lg);
     background-color: var(--background-primary);
 } 
 
-.about-portfolio-section .container-fluid {
+.about-enforcement-section .container-fluid {
     width: 100%;
     max-width: none;
     padding-right: 0;
     padding-left: 0;
 }
 
-.about-portfolio-section h2 {
+.about-enforcement-section h2 {
     margin-bottom: 80px;
     font-size: 64px;
     font-weight: bold;
 }
 
 
-.about-portfolio-section .portfolio-diy,
-.about-portfolio-section .portfolio-handle {
+.about-enforcement-section .enforcement-diy,
+.about-enforcement-section .enforcement-handle {
     overflow: hidden;
     position: relative;
     background-position: center;
@@ -70,16 +70,16 @@
     align-items: center;
 }
 
-.about-portfolio-section .portfolio-diy {
+.about-enforcement-section .enforcement-diy {
     background-image: url(../../assets/images/services06.jpg);
 }
 
-.about-portfolio-section .portfolio-handle {
+.about-enforcement-section .enforcement-handle {
     background-image: url(../../assets/images/services07.jpg);
 }
 
-.about-portfolio-section .portfolio-diy::before,
-.about-portfolio-section .portfolio-handle::before {
+.about-enforcement-section .enforcement-diy::before,
+.about-enforcement-section .enforcement-handle::before {
     content: "";
     position: absolute;
     inset: -8px;
@@ -87,42 +87,42 @@
     z-index: 0;
 }
 
-.about-portfolio-section .portfolio-diy .row,
-.about-portfolio-section .portfolio-handle .row {
+.about-enforcement-section .enforcement-diy .row,
+.about-enforcement-section .enforcement-handle .row {
     position: relative;
     z-index: 1;
 }
 
-.about-portfolio-section .portfolio-diy h3,
-.about-portfolio-section .portfolio-handle h3 {
+.about-enforcement-section .enforcement-diy h3,
+.about-enforcement-section .enforcement-handle h3 {
     color: var(--blue-primary-normal);
     text-align: start;
     font-size: 64px;
 }
 
-.about-portfolio-section .portfolio-diy h4,
-.about-portfolio-section .portfolio-handle h4 {
+.about-enforcement-section .enforcement-diy h4,
+.about-enforcement-section .enforcement-handle h4 {
     color: var(--white-primary);
     text-align: start;
     font-size: 34px;
 }
 
 
-.about-portfolio-section .portfolio-diy ul,
-.about-portfolio-section .portfolio-handle ul {
+.about-enforcement-section .enforcement-diy ul,
+.about-enforcement-section .enforcement-handle ul {
     margin: 18px auto;
     padding: 0;
     list-style: none;
 }
 
-.about-portfolio-section .portfolio-diy li,
-.about-portfolio-section .portfolio-handle li {
+.about-enforcement-section .enforcement-diy li,
+.about-enforcement-section .enforcement-handle li {
     font-size: 14px;
     font-family: var(--font-primary);
 }
 
-.about-portfolio-section .portfolio-diy li::before, 
-.about-portfolio-section .portfolio-handle li::before {
+.about-enforcement-section .enforcement-diy li::before, 
+.about-enforcement-section .enforcement-handle li::before {
     content: "\2713";
     color: var(--orange-primary-normal);
     padding-right: 18px;

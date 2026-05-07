@@ -29,11 +29,6 @@
         font-size: 16px;
     }
 
-    .btn-orange,
-    .btn-blue {
-        max-width: 215px
-    }
-
     .footer {
         padding: 30px;
     }
@@ -43,12 +38,16 @@
     }
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 993px) {
 
     .btn-orange,
     .btn-blue {
         font-size: 18px;
-        max-width: 160px;
+        max-width: 300px;
+    }
+
+    .contact-section h2 {
+        font-size: 78px;
     }
 
     .contact-section .form {
@@ -75,10 +74,10 @@
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
 
     .navbar .navbar-brand {
-        font-size: 38px;
+        font-size: 30px;
     }
 
     .navbar .menu {
@@ -90,41 +89,28 @@
         margin: 1rem auto;
     }
 
-    section {
-        padding: var(--section-padding-sm);
-    }
 
     .btn-orange,
     .btn-blue {
         max-width: 255px;
-        font-size: 24px;
     }
 
     .map-section h2 {
-        font-size: 20px;
-    }
-
-    .contact-section .form {
-        padding: 56px;
+        font-size: 32px;
+        margin-top: 32px;
     }
 
 }
 
 @media only screen and (max-width: 575px) {
 
-    .btn-orange,
-    .btn-blue {
-        max-width: 172px;
-        font-size: 18px;
+    section {
+        padding: var(--section-padding-sm);
     }
 
 }
 
 @media only screen and (max-width: 420px) {
-
-    section {
-        padding: var(--section-padding-sm);
-    }
 
     .navbar .navbar-brand {
         font-size: 30px;
@@ -132,12 +118,11 @@
 
     .btn-orange,
     .btn-blue {
-        max-width: 135px;
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .map-section h2 {
-        font-size: 20px;
+        font-size: 28px;
         text-align: center;
     }
 
@@ -148,7 +133,6 @@
     }
 
     .contact-section .form .btn-blue {
-        font-size: 18px;
         width: 215px;
     }
 
@@ -156,25 +140,24 @@
         padding: 20px
     }
 
-
     .footer h2 {
         font-size: 38px;
     }
 
     .footer-contact a {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .footer-copyright a,
     .footer-copyright p {
         padding: 12px;
-        font-size: 14px;
+        font-size: 16px;
     }
 
 
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 380px) {
 
     .navbar .menu {
         width: 280px;
@@ -191,12 +174,7 @@
 
     .btn-orange,
     .btn-blue {
-        max-width: 120px;
-        font-size: 14px;
-    }
-
-    .map-section h2 {
-        font-size: 16px;
+        max-width: 200px;
     }
 
     .contact-section .form label {
@@ -206,6 +184,10 @@
     .contact-section .form .btn-blue {
         font-size: 16px;
         width: 180px;
+    }
+
+    .footer-contact a {
+        font-size: 14px;
     }
 
 }

@@ -181,7 +181,7 @@
     margin: 0;
     width: 480px;
     height: auto;
-    font-size: 42px;
+    font-size: 46px;
     font-weight: bolder;
 }
 
@@ -390,7 +390,7 @@
 
 #icon-trouble {
     transform-origin: center;
-    max-width: 60%;
+    max-width: 80%;
 }
 
 .icon-animation {
@@ -442,7 +442,6 @@
     width: 214px;
     height: 214px;
     position: absolute;
-    right: 90%;
     top: -10%;
 }
 
@@ -503,12 +502,21 @@
 }
 
 .contact-section h2 {
-    font-size: 48px;
+    font-size: 88px;
     font-weight: bolder;
-    margin-bottom: 57px;
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--blue-primary-normal) 0%,
+            var(--purple-primary-normal) 100%);
+    background-clip: text;
 }
 
-.contact-section .reach ul {
+.contact-section p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-section .reach {
     list-style-type: none;
     padding: 0px;
 }
@@ -517,7 +525,6 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding-bottom: 23px;
 }
 
 .reach a {
@@ -526,16 +533,6 @@
     font-weight: 300;
     color: var(--black-primary);
     padding-left: 14px;
-}
-
-.reach img {
-    width: 40px;
-    height: 40px;
-}
-
-.reach .reach-img {
-    width: 480px;
-    height: auto;
 }
 
 /* ==============================
@@ -556,11 +553,7 @@
     }
 
     .faq-questions .accordion-button {
-        font-size: 14px;
-    }
-
-    .faq-section .faq-icon {
-        right: 80%;
+        font-size: 17px;
     }
 
     .faq-section .faq-title {
@@ -589,10 +582,6 @@
         margin-top: 50px;
     }
 
-    .video-section .btn-orange {
-        max-width: 360px;
-    }
-
     .differentiatior-section .carousel .carousel-item {
         padding-left: 50px;
     }
@@ -617,14 +606,9 @@
         font-size: 34px;
     }
 
-
-    .faq-questions .accordion-button {
-        font-size: 13px;
-    }
-
 }
 
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 993px) {
 
     .about-section {
         background-size: 116%;
@@ -693,7 +677,6 @@
     .faq-section .faq-icon {
         width: 140px;
         height: 140px;
-        right: 80%;
     }
 
     .faq-section .faq-title h2 {
@@ -701,12 +684,7 @@
     }
 
     .faq-questions .accordion-button {
-        font-size: 12px;
-    }
-
-    .reach .reach-img {
-        width: 380px;
-        height: auto;
+        font-size: 16px;
     }
 
     .reach a {
@@ -716,31 +694,24 @@
 
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 769px) {
 
-    .about-section {
-        background-image: url(../../assets/images/about02.png);
-        background-position-x: 107%;
-        background-position-y: center;
-        background-size: 48%;
+    .hero-section .hero-text h1 {
+        font-size: 56px;
+    }
+
+    .hero-text p {
+        font-size: 17px;
+    }
+
+    .btn-orange,
+    .btn-blue {
+        font-size: 20px;
+        width: 200px;
     }
 
     .about-section h2 {
-        font-size: 48px;
-    }
-
-    .about-section h3 {
-        font-size: 22px;
-    }
-
-    .about-section p:not(.large) {
-        padding: 0px 155px 0px 0px;
-        font-size: 16px;
-        max-width: 450px;
-    }
-
-    .about-section .large {
-        font-size: 28px;
+        font-size: 68px;
     }
 
     .video-section h2 {
@@ -748,7 +719,7 @@
     }
 
     .differentiatior-section {
-        height: 600px;
+        height: 650px;
     }
 
     .differentiatior-section .title h2 {
@@ -784,27 +755,59 @@
         padding-left: 0rem;
     }
 
-    .faq-section .faq-icon {
-        top: -3%;
-        right: 70%;
-    }
-
     .faq-section .faq-title h2 {
-        font-size: 38px;
+        font-size: 48px;
     }
 
     .faq-section .faq-title p {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .faq-section .faq-questions {
         margin-top: 24px;
     }
 
-    .reach .reach-img {
-        margin-bottom: 32px;
+    .contact-section h2 {
+        font-size: 68px;
     }
 
+    .reach img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .about-section {
+        background-image: url(../../assets/images/about02.png);
+        background-position-x: 107%;
+        background-position-y: center;
+        background-size: 48%;
+    }
+
+    .about-section h2 {
+        font-size: 48px;
+    }
+
+    .about-section h3 {
+        font-size: 22px;
+    }
+
+    .about-section p:not(.large) {
+        padding: 0px 155px 0px 0px;
+        font-size: 16px;
+        max-width: 450px;
+    }
+
+    .about-section .large {
+        font-size: 28px;
+    }
+
+    .contact-section .form .btn-blue {
+        width: 220px;
+    }
 }
 
 @media only screen and (max-width: 575px) {
@@ -822,6 +825,12 @@
     .hero-section .hero-image img {
         max-width: 80%;
         margin: 1.5rem auto;
+    }
+
+    .btn-orange,
+    .btn-blue {
+        font-size: 18px;
+        width: 160px;
     }
 
     .about-section {
@@ -846,7 +855,7 @@
 
     .about-section .large {
         margin: 0;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .video-section {
@@ -858,8 +867,8 @@
     }
 
     .video-section .btn-orange {
-        font-size: 24px;
-        width: 230px;
+        font-size: 21px;
+        width: 240px;
     }
 
     .differentiatior-section {
@@ -868,7 +877,8 @@
     }
 
     .differentiatior-section .title h2 {
-        font-size: 45px;
+        font-size: 46px;
+        text-align: center;
     }
 
     .differentiatior-section .carousel .card {
@@ -892,9 +902,13 @@
         top: -10%;
     }
 
-
     .services-section h2 {
+        margin: 32px auto;
         font-size: 38px;
+    }
+
+    .services-section .services-options {
+        margin: 0px auto;
     }
 
     .services-options .service-option h3 {
@@ -902,22 +916,36 @@
     }
 
     .services-section p {
-        font-size: 17px;
+        font-size: 18px;
     }
 
     .services-section .btn-trouble {
-        font-size: 16px;
+        font-size: 18px;
+    }
+
+    #icon-trouble {
+        max-width: 100%;
     }
 
     .faq-section .faq-title h2 {
-        font-size: 30px;
+        font-size: 32px;
+    }
+    .faq-section .faq-title p {
+        font-size: 24px;
     }
 
     .faq-section .faq-icon {
         top: 0%;
-        right: 70%;
-        width: 100px;
-        height: 100px;
+        width: 120px;
+        height: 120px;
+    }
+
+    .faq-questions .accordion-button {
+        font-size: 18px;
+    }
+
+    .contact-section h2 {
+        font-size: 68px;
     }
 
 }
@@ -933,11 +961,11 @@
     }
 
     .hero-section .hero-text h1 {
-        font-size: 38px;
+        font-size: 40px;
     }
 
     .hero-text p {
-        font-size: 13px;
+        font-size: 16px;
     }
 
     .about-section {
@@ -945,7 +973,8 @@
     }
 
     .about-section h2 {
-        font-size: 42px;
+        font-size: 46px;
+        margin: 22px 0px 8px 0px;
     }
 
     .about-section p:not(.large) {
@@ -955,7 +984,7 @@
 
     .about-section .large {
         margin: 0;
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .video-section {
@@ -963,22 +992,11 @@
     }
 
     .video-section h2 {
-        font-size: 48px;
+        font-size: 52px;
     }
 
-    .video-section .btn-orange {
-        font-size: 22px;
-        width: 200px;
-    }
-
-    .differentiatior-section {
-        margin-top: 2rem;
-        height: auto;
-    }
-
-    .differentiatior-section .title h2 {
-        font-size: 32px;
-        text-align: center;
+    .differentiatior-section .carousel .card {
+        height: 250px;
     }
 
     .card h3 {
@@ -996,16 +1014,12 @@
         top: -10%;
     }
 
-    .services-section h2 {
-        font-size: 28px;
-    }
-
     .services-options .service-option h3 {
         font-size: 24px;
     }
 
     .services-section p {
-        font-size: 13px;
+        font-size: 18px;
     }
 
     #icon-trouble {
@@ -1014,26 +1028,30 @@
 
     .services-section .btn-trouble {
         margin: 8px auto;
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .faq-section .faq-title h2 {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .faq-section .faq-title p {
         font-size: 18px;
     }
 
+    .faq-questions .accordion-button {
+        font-size: 17px;
+    }
+
     .accordion-body li,
     .accordion-body p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .faq-section .faq-icon {
         top: 0%;
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
     }
 
     .contact-section {
@@ -1041,17 +1059,17 @@
     }
 
     .contact-section h2 {
-        font-size: 28px;
+        font-size: 48px;
         margin-bottom: 24px;
     }
 
-    .reach ul img {
-        height: 20px;
+    .contact-section p {
+        font-size: 16px;
     }
 
     .reach a {
-        padding: 0;
-        font-size: 14px;
+        padding-left: 5px;
+        font-size: 16px;
     }
 
     .contact-section .custodian-logo {
@@ -1061,18 +1079,47 @@
 
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 390px) {
 
     .hero-section .hero-text h1 {
         font-size: 32px;
     }
 
-    .video-section h2 {
+    .hero-text p {
+        font-size: 13px;
+    }
+
+    .hero-section .btn-orange,
+    .btn-blue {
+        font-size: 16px;
+        width: 130px;
+    }
+
+    .about-section h2 {
         font-size: 38px;
+        margin: 22px 0px 8px 0px;
+    }
+
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .video-section h2 {
+        font-size: 42px;
+    }
+
+    .video-section .btn-orange {
+        font-size: 20px;
+        width: 230px;
+    }
+
+    .differentiatior-section .title h2 {
+        font-size: 43px;
     }
 
     .differentiatior-section .carousel .card {
         height: 250px;
+        padding: 24px;
     }
 
     .card-icon img {
@@ -1090,8 +1137,30 @@
         font-size: 14px;
     }
 
+    .services-section h2 {
+        font-size: 28px;
+    }
+
+    .services-options .service-option {
+        height: 238px;
+    }
+
+    .services-section p,
+    .services-section .btn-trouble {
+        font-size: 14px;
+    }
+
+    .faq-section .faq-title h2 {
+        font-size: 22px;
+    }
+
     .faq-section .faq-title p {
         font-size: 16px;
+    }
+
+    .faq-section .faq-icon {
+        width: 80px;
+        height: 80px;
     }
 
     .faq-questions .accordion-button {
@@ -1100,7 +1169,13 @@
 
     .accordion-body li,
     .accordion-body p {
-        font-size: 13px;
+        font-size: 14px;
     }
+
+
+    .reach a {
+        font-size: 12px;
+    }
+
 
 }

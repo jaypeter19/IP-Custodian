@@ -85,9 +85,14 @@
     }
 
     .navbar .contact {
+        width: 160px;
         margin: 1rem auto;
     }
 
+    .navbar-nav .dropdown-menu {
+        left: -100%;
+        width: 100%;
+    }
 
     .btn-orange,
     .btn-blue {
@@ -113,6 +118,11 @@
 
     .navbar .navbar-brand {
         font-size: 30px;
+    }
+
+    .navbar .menu,
+    .navbar-nav .dropdown-menu {
+        width: 280px;
     }
 
     .btn-orange,
@@ -157,10 +167,6 @@
 }
 
 @media only screen and (max-width: 380px) {
-
-    .navbar .menu {
-        width: 280px;
-    }
 
     .navbar .contact {
         width: 130px;

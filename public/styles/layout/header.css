@@ -73,7 +73,8 @@
 
 .navbar-nav .dropdown-menu {
     position: absolute;
-    left: -50%;
+    left: -100%;
+    width: 300px;
     background-color: var(--background-primary);
     border-radius: var(--radius-md);
 }

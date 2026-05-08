@@ -126,7 +126,7 @@
 }
 
 .pricing-modal .modal-dialog {
-    max-width: 900px;
+    max-width: 980px;
 }
 
 .pricing-modal .modal-content {
@@ -182,28 +182,34 @@
     margin-top: 24px;
 }
 
-.pricing-plan p {
-    font-family: var(--font-primary);
-    font-size: 58px;
-    font-weight: bolder;
-    margin: 12px auto;
+.pricing-plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-plan ul li {
+    font-size: 18px;
 }
 
 .pricing-plan-diy {
     background-color: var(--blue-primary-normal);
-    color: var(--white-primary);
+    margin: 0px 20px 0px 0px;
+    border-top-right-radius: var(--radius-lg);
 }
 
 .pricing-plan-managed {
     background-color: var(--orange-primary-light);
+    border-top-left-radius: var(--radius-lg);
 }
 
-.pricing-plan-managed h3 {
+.pricing-plan-managed h3,
+.pricing-plan-managed li {
     color: var(--orange-primary-normal);
 }
 
-.pricing-plan-managed p {
-    color: var(--blue-primary-normal);
+.pricing-plan-diy h3,
+.pricing-plan-diy li {
+    color: var(--white-primary);
 }
 
 
@@ -240,7 +246,7 @@
 
 }
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:992px) {
 
     .form-section h1 {
         font-size: 78px;
@@ -274,20 +280,16 @@
     }
 
     .pricing-modal .modal-dialog {
-        max-width: 700px;
+        max-width: 780px;
     }
 
     .pricing-plan h3 {
         font-size: 32px;
     }
 
-    .pricing-plan p {
-        font-size: 38px;
-    }
-
 }
 
-@media only screen and (max-width:767px) {
+@media only screen and (max-width:768px) {
     .details-section {
         width: 90%;
         margin: 0rem auto;
@@ -311,7 +313,7 @@
     }
 
     .pricing-modal .modal-dialog {
-        max-width: 550px;
+        max-width: 680px;
     }
 
     .pricing-modal-header {
@@ -334,10 +336,6 @@
         font-size: 14px;
     }
 
-    .pricing-plan {
-        min-height: 150px;
-    }
-
     .pricing-modal .modal-dialog {
         max-width: 450px;
         margin: 0 auto;
@@ -350,15 +348,26 @@
     }
 
     .pricing-modal-header h2 {
-        font-size: 38px;
+        font-size: 28px;
+    }
+
+    .pricing-plan {
+        min-height: 150px;
+        border-radius: 0;
+        margin: 0;
     }
 
     .pricing-plan h3 {
         font-size: 32px;
     }
 
-    .pricing-plan p {
-        font-size: 28px;
+    .pricing-plan ul li {
+        font-size: 16px;
+    }
+
+    .pricing-plan-diy {
+        border-top-right-radius: var(--radius-lg);
+        border-top-left-radius: var(--radius-lg);
     }
 }
 
@@ -412,6 +421,11 @@
         max-width: 350px;
     }
 
+    .pricing-modal .btn-close {
+        top: 10px;
+        right: 35px;
+    }
+
 
 }
 
@@ -421,7 +435,11 @@
         font-size: 58px;
     }
 
-     .details-section a {
+    .details-section a {
         font-size: 12px;
+    }
+
+    .pricing-modal-header h2 {
+        font-size: 20px;
     }
 }

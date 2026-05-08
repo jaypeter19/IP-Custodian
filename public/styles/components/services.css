@@ -140,20 +140,17 @@
     }
 
     .cta-services-section h2 {
-        margin-bottom: 36px;
         color: var(--white-primary);
-        font-size: 42px;
+        font-family: var(--font-secondary);
+        font-size: 48px;
         font-weight: bolder;
     }
 
     .cta-services-section p {
-        max-width: 760px;
-        margin: 0 auto 44px;
         color: var(--white-primary);
-        font-family: var(--font-primary);
+        font-family: var(--font-tertiary);
         font-size: 20px;
-        font-weight: 500;
-        line-height: var(--line-height-base);
+        font-weight: 300;
     }
 
     @media only screen and (max-width: 1400px) {
@@ -165,7 +162,7 @@
 
         .about-services-section .services-diy p,
         .about-services-section .services-handle p {
-            font-size: 14px;
+            font-size: 13px;
         }
 
     }
@@ -178,7 +175,6 @@
             bottom: -6%;
         }
 
-
         .about-services-section .services-diy h3,
         .about-services-section .services-handle h3 {
             font-size: 38px;
@@ -189,6 +185,15 @@
             font-size: 28px;
         }
 
+        .about-services-section .services-diy li::before,
+        .about-services-section .services-handle li::before {
+            padding-right: 8px;
+        }
+
+        .cta-services-section h2 {
+            font-size: 46px;
+        }
+
 
         .cta-services-section p {
             font-size: 18px;
@@ -197,6 +202,11 @@
     }
 
     @media only screen and (max-width: 992px) {
+
+        .about-services-section .services-diy li,
+        .about-services-section .services-handle li {
+            font-size: 12px;
+        }
 
         .cta-services-section .row {
             width: 100%;
@@ -243,11 +253,6 @@
             margin: 12px auto;
         }
 
-        .about-services-section .services-diy li,
-        .about-services-section .services-handle li {
-            font-size: 12px;
-        }
-
         .services-diy .btn-blue,
         .services-handle .btn-blue {
             width: 185px;
@@ -268,7 +273,7 @@
     @media only screen and (max-width: 575px) {
 
         .hero-services-section {
-            min-height: 400px;
+            min-height: 300px;
         }
 
 
@@ -324,11 +329,11 @@
         }
     }
 
-    @media only screen and (max-width: 420px) {
+    @media only screen and (max-width: 430px) {
 
         .renewals-services h1 {
             font-size: 58px !important;
-            bottom: -4%;
+            bottom: -5%;
         }
 
         .portfolio-services h1,
@@ -337,13 +342,30 @@
             bottom: -3%;
         }
 
+        .about-services-section .services-diy,
+        .about-services-section .services-handle {
+            padding: 8px;
+        }
+
         .about-services-section h2 {
-            font-size: 24px;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .about-services-section .services-diy h3,
+        .about-services-section .services-handle h3 {
+            font-size: 38px;
+            margin-top: 12px;
         }
 
         .about-services-section .services-diy p,
         .about-services-section .services-handle p {
             padding-right: 0px;
+        }
+
+        .about-services-section .services-diy li::before,
+        .about-services-section .services-handle li::before {
+            padding-right: 8px;
         }
 
         .cta-services-section {
@@ -357,23 +379,37 @@
 
         .cta-services-section .row {
             min-height: 330px;
-            padding: 1rem;
         }
 
-
         .cta-services-section h2 {
-            font-size: 20px;
+            font-size: 27px;
             margin-bottom: 22px;
         }
 
         .cta-services-section p {
-            font-size: 12px;
-            margin: 0 auto 22px;
+            font-size: 14px;
         }
 
         .cta-services-section .btn-orange {
-            max-width: 185px;
-            font-size: 18px;
+            margin: 0;
+            width: 195px;
+            font-size: 20px;
         }
 
+    }
+
+    @media only screen and (max-width: 390px) {
+
+        .about-services-section .services-diy h3,
+        .about-services-section .services-handle h3 {
+            font-size: 33px;
+        }
+
+        .cta-services-section h2 {
+            font-size: 24px;
+        }
+
+        .cta-services-section p {
+            font-size: 13px;
+        }
     }

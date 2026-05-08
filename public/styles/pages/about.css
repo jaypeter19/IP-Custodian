@@ -128,7 +128,7 @@
   background-clip: text;
 }
 
-.key-mission img{
+.key-mission img {
   right: 102%;
 }
 
@@ -168,7 +168,7 @@
 }
 
 .benefits-about-section .row {
-  height: 740px;
+  height: 640px;
   --bs-gutter-x: 0;
   margin-right: 0;
   margin-bottom: 35px;
@@ -240,9 +240,8 @@
   }
 
   .keys-about-section img {
-    width: 58px;
+    width: 38px;
     height: auto;
-    bottom: 40%;
   }
 
   .keys-about-section span {
@@ -274,9 +273,8 @@
   }
 
   .keys-about-section img {
-    width: 48px;
-    height: auto;
-    bottom: 45%;
+    width: 30px;
+    bottom: 50%;
   }
 
   .keys-about-section span {
@@ -316,10 +314,8 @@
     font-size: 32px;
   }
 
-  .keys-about-section img {
-    width: 38px;
-    height: auto;
-    bottom: 50%;
+  .keys-about-section p {
+    line-height: var(--line-height-base);
   }
 
   .keys-about-section span {
@@ -327,7 +323,7 @@
   }
 
   .benefits-about-section .row {
-    height: 340px;
+    height: 240px;
   }
 
   .benefits-about-section h2 {
@@ -369,12 +365,6 @@
   .keys-about-section p {
     text-align: justify;
     font-size: 12px;
-  }
-
-  .key-values img {
-    bottom: 30%;
-    left: 105%;
-
   }
 
   .benefits-about-section h2 {

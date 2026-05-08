@@ -45,7 +45,6 @@
     background-color: var(--background-secondary);
     border-radius: var(--radius-md);
     padding: 30px;
-    width: 85%;
 }
 
 .details-section li {
@@ -92,48 +91,125 @@
 
 .pricing-section .pricing-options {
     margin-top: 116px;
-
 }
 
-.pricing-options .accordion {
+.pricing-options .btn-orange {
+    width: 100%;
+    max-width: 100%;
+    min-height: 190px;
     border-radius: var(--radius-lg);
-    overflow: hidden;
-}
-
-.pricing-options .accordion .accordion-item {
-    border: none;
-    border-radius: var(--radius-lg);
-    overflow: hidden;
-}
-
-.pricing-options .accordion-button {
-    position: relative;
-    justify-content: center;
+    font-family: var(--font-primary);
+    font-weight: bolder;
+    font-size: 34px;
     text-align: center;
-    height: 110px;
-    font-size: 24px;
-    background-color: var(--orange-primary-normal);
-    color: var(--white-primary);
-    font-family: var(--font-tertiary);
-    font-weight: bold;
-    transition: background-color 0.3s ease-in;
+    white-space: normal;
+    position: relative;
+    margin: 0;
 }
 
-.pricing-options .accordion-button::after {
+.pricing-options .btn-orange::after {
+    content: url(../../assets/icons/icon17.svg);
     position: absolute;
-    right: 40px;
-    margin-left: 0;
-    width: 24px;
-    height: 24px;
-    background-size: 24px;
+    right: 10%;
+    bottom: 57%;
+    width: 18px;
+    height: 18px;
+    transition: all 0.25s ease;
+}
+
+.pricing-options .btn-orange:hover::after {
+    content: url(../../assets/icons/icon18.svg);
+    right: 10%;
+    bottom: 55%;
+    width: 18px;
+    height: 18px;
+}
+
+.pricing-modal .modal-dialog {
+    max-width: 900px;
+}
+
+.pricing-modal .modal-content {
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--radius-lg);
+    background-color: var(--orange-primary-normal);
+}
+
+.pricing-modal .btn-close {
+    position: absolute;
+    top: 28px;
+    right: 32px;
+    z-index: 2;
+    filter: invert(1);
+}
+
+.pricing-modal-header {
+    padding: 56px;
+    background-color: var(--orange-primary-normal);
+}
+
+.pricing-modal-header h2 {
+    color: var(--white-primary);
+    font-family: var(--font-primary);
+    font-size: 48px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+
+.pricing-modal-body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pricing-plan {
+    min-height: 290px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    text-align: center;
+}
+
+.pricing-plan h3 {
+    font-family: var(--font-primary);
+    font-size: 42px;
+    font-weight: bolder;
+    margin-top: 24px;
+}
+
+.pricing-plan p {
+    font-family: var(--font-primary);
+    font-size: 58px;
+    font-weight: bolder;
+    margin: 12px auto;
+}
+
+.pricing-plan-diy {
+    background-color: var(--blue-primary-normal);
+    color: var(--white-primary);
+}
+
+.pricing-plan-managed {
+    background-color: var(--orange-primary-light);
+}
+
+.pricing-plan-managed h3 {
+    color: var(--orange-primary-normal);
+}
+
+.pricing-plan-managed p {
+    color: var(--blue-primary-normal);
 }
 
 
 /* ==============================
    Responsive
    ============================== */
-
-@media only screen and (max-width:1400px) {}
 
 @media only screen and (max-width:1200px) {
 
@@ -159,7 +235,7 @@
     }
 
     .details-section a {
-        font-size: 20px;
+        font-size: 16px;
     }
 
 }
@@ -184,11 +260,29 @@
     }
 
     .details-section li>img {
-        margin: 15px 8px;
+        margin: 8px;
+        width: 20px;
+        height: 20px;
+    }
+
+    .details-section a {
+        font-size: 14px;
     }
 
     .pricing-section h2 {
         font-size: 44px;
+    }
+
+    .pricing-modal .modal-dialog {
+        max-width: 700px;
+    }
+
+    .pricing-plan h3 {
+        font-size: 32px;
+    }
+
+    .pricing-plan p {
+        font-size: 38px;
     }
 
 }
@@ -199,8 +293,8 @@
         margin: 0rem auto;
     }
 
-    .details-section ul {
-        width: 80%;
+    .details-section a {
+        font-size: 18px;
     }
 
     .details-section img {
@@ -211,12 +305,60 @@
     .pricing-section .pricing-options {
         margin-top: 86px;
     }
+
+    .pricing-options .btn-orange {
+        min-height: 140px;
+    }
+
+    .pricing-modal .modal-dialog {
+        max-width: 550px;
+    }
+
+    .pricing-modal-header {
+        padding: 36px;
+    }
+
+    .pricing-modal-header h2 {
+        font-size: 32px;
+    }
+
+    .pricing-plan h3 {
+        font-size: 28px;
+    }
+
 }
 
 @media only screen and (max-width:575px) {
 
-    .details-section ul {
-        width: 100%;
+    .details-section a {
+        font-size: 14px;
+    }
+
+    .pricing-plan {
+        min-height: 150px;
+    }
+
+    .pricing-modal .modal-dialog {
+        max-width: 450px;
+        margin: 0 auto;
+    }
+
+    .pricing-modal-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-modal-header h2 {
+        font-size: 38px;
+    }
+
+    .pricing-plan h3 {
+        font-size: 32px;
+    }
+
+    .pricing-plan p {
+        font-size: 28px;
     }
 }
 
@@ -236,6 +378,7 @@
 
     .details-section h2 {
         font-size: 34px;
+        margin-bottom: 28px;
     }
 
     .details-section ul {
@@ -248,12 +391,9 @@
         margin: 0;
     }
 
-    .details-section a {
-        font-size: 16px;
-    }
 
     .form-section .btn-blue {
-        max-width: 160px;
+        width: 160px;
     }
 
     .pricing-section h2 {
@@ -261,13 +401,27 @@
     }
 
     .pricing-section .pricing-options {
-        margin-top: 56px;
+        margin-top: 36px;
     }
+
+    .pricing-options .btn-orange {
+        font-size: 26px;
+    }
+
+    .pricing-modal .modal-dialog {
+        max-width: 350px;
+    }
+
+
 }
 
 
 @media only screen and (max-width:350px) {
     .form-section h1 {
         font-size: 58px;
+    }
+
+     .details-section a {
+        font-size: 12px;
     }
 }

@@ -32,6 +32,13 @@
         padding-left: 0;
     }
 
+    .about-services-section .container-fluid>.row,
+    .about-services-section .services-diy>.row,
+    .about-services-section .services-handle>.row {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     .about-services-section h2 {
         margin-bottom: 80px;
         font-size: 64px;

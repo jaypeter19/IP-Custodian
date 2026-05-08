@@ -5,7 +5,7 @@
 
 /* Hero */
 
-.portfolio-services::before{
+.portfolio-services::before {
     content: "";
     position: absolute;
     inset: -8px;

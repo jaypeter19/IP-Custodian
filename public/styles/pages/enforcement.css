@@ -5,7 +5,7 @@
 
 /* Hero */
 
-.enforcement-services::before{
+.enforcement-services::before {
     content: "";
     position: absolute;
     inset: -8px;

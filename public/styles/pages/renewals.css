@@ -5,7 +5,7 @@
 
 /* Hero */
 
-.renewals-services::before{
+.renewals-services::before {
     content: "";
     position: absolute;
     inset: -8px;

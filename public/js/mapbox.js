@@ -6,12 +6,14 @@ mapboxgl.accessToken = window.MAPBOX_ACCESS_TOKEN;
 
 const mapboxScriptUrl = new URL(document.currentScript.src);
 const geojsonUrl = new URL('../json/geojson.json', mapboxScriptUrl);
+const isMobile = window.matchMedia('(max-width: 575px)').matches;
+
 
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/jptelles19/cmnz4m2lt008r01qu2a5095j9',
-    center: [-82, 10],
-    zoom: 2
+    center: isMobile ? [-62, 12] : [-70, 12],
+    zoom: isMobile ? 1.2 : 2.3
 });
 
 fetch(geojsonUrl)

@@ -12,7 +12,7 @@
             },
             "properties": {
                 "title": "Ireland",
-                "description": "Dublin"
+                "description": "Dublin, Leinster."
             }
         },
         {
@@ -26,7 +26,7 @@
             },
             "properties": {
                 "title": "United States",
-                "description": "Los Angeles"
+                "description": "Los Angeles, California."
             }
         },
         {
@@ -40,7 +40,7 @@
             },
             "properties": {
                 "title": "Colombia",
-                "description": "Bogotá"
+                "description": "Bogotá."
             }
         },
         {
@@ -54,7 +54,7 @@
             },
             "properties": {
                 "title": "Brazil",
-                "description": "Porto Alegre"
+                "description": "Porto Alegre, RS."
             }
         }
     ]

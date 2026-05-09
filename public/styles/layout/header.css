@@ -57,13 +57,11 @@
     margin-left: 1px;
 }
 
-.menu .nav-link.show {
-    color: inherit;
-}
-
+.menu .nav-link.show,
 .menu .nav-link:hover,
 .nav-link:focus-visible {
     background-color: var(--blue-primary-hover);
+    color: inherit;
     box-shadow: none;
 }
 
@@ -75,8 +73,24 @@
     position: absolute;
     left: -100%;
     width: 300px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8px);
     background-color: var(--background-primary);
     border-radius: var(--radius-md);
+    pointer-events: none;
+    transition:
+        opacity 0.2s ease-in,
+        transform 0.2s ease-in,
+        visibility 0.2s ease-in;
+}
+
+.navbar-nav .dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 .dropdown-menu .dropdown-item {

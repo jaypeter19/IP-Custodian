@@ -45,10 +45,6 @@
         max-width: 300px;
     }
 
-    .contact-section h2 {
-        font-size: 78px;
-    }
-
     .contact-section .form {
         margin: 0px;
         padding: 36px;
@@ -110,6 +106,12 @@
 
     section {
         padding: var(--section-padding-sm);
+    }
+
+
+    #map {
+        width: 100%;
+        height: 420px;
     }
 
 }

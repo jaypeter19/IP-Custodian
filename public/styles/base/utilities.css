@@ -44,22 +44,34 @@
 }
 
 .marker {
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--white-primary);
-    border-radius: 50%;
-    background-color: var(--blue-primary-normal);
-    box-shadow: var(--box-shadow-btn);
+    content: url(../../assets/icons/icon19.png);
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
 .mapboxgl-popup {
-    width: 280px;
-    border-radius: var(--radius-sm);
+    max-width: none !important;
+    width: 300px;
+    padding: 34px;
 }
 
-.mapboxgl-popup-content {
+.mapboxgl-popup-content h3 {
     font-family: var(--font-primary);
-    font-size: 24px;
+    font-size: 28x;
+    font-weight: bolder;
+    color: transparent;
+    background: linear-gradient(to right,
+            var(--purple-primary-normal) 24%,
+            var(--blue-primary-normal) 69%);
+    background-clip: text;
+    text-align: start;
+}
+
+.mapboxgl-popup-content p {
+    font-family: var(--font-tertiary);
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--blue-primary-darker);
     text-align: start;
 }

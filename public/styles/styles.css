@@ -90,6 +90,11 @@
         width: 100%;
     }
 
+    .navbar .menu,
+    .navbar-nav .dropdown-menu {
+        width: 280px;
+    }
+
     .btn-orange,
     .btn-blue {
         max-width: 255px;
@@ -120,11 +125,6 @@
 
     .navbar .navbar-brand {
         font-size: 30px;
-    }
-
-    .navbar .menu,
-    .navbar-nav .dropdown-menu {
-        width: 280px;
     }
 
     .btn-orange,

@@ -37,15 +37,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (solutionDropdownToggle && solutionDropdownMenu) {
 
-        solutionDropdownToggle.addEventListener('mouseenter', showDropdown);
-        solutionDropdownToggle.addEventListener('focusin', showDropdown);
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
 
-        solutionDropdownToggle.addEventListener('mouseleave', scheduleHideDropdown);
-        solutionDropdownMenu.addEventListener('mouseenter', showDropdown);
-        solutionDropdownMenu.addEventListener('mouseleave', hideDropdown);
-        solutionDropdownMenu.addEventListener('focusout', hideDropdown);
+            solutionDropdownToggle.addEventListener('mouseenter', showDropdown);
+            solutionDropdownToggle.addEventListener('focusin', showDropdown);
+            solutionDropdownToggle.addEventListener('mouseleave', scheduleHideDropdown);
+
+            solutionDropdownMenu.addEventListener('mouseenter', showDropdown);
+            solutionDropdownMenu.addEventListener('mouseleave', hideDropdown);
+            solutionDropdownMenu.addEventListener('focusout', hideDropdown);
+
+        }
     }
-
-
 
 });

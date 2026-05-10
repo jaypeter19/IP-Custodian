@@ -56,6 +56,21 @@
     padding: 34px;
 }
 
+.mapboxgl-popup-content {
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--box-shadow-btn);
+    padding: 10px 10px 15px;
+    pointer-events: auto;
+    position: relative;
+    background-color: var(--background-primary);
+}
+
+.mapboxgl-popup-close-button {
+    right: 10px;
+    top: 10px;
+}
+
 .mapboxgl-popup-content h3 {
     font-family: var(--font-primary);
     font-size: 28x;
@@ -70,7 +85,7 @@
 
 .mapboxgl-popup-content p {
     font-family: var(--font-tertiary);
-    font-size: 20px;
+    font-size: 19px;
     font-weight: bold;
     color: var(--blue-primary-darker);
     text-align: start;

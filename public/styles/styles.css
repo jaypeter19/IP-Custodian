@@ -105,6 +105,16 @@
         margin-top: 32px;
     }
 
+    .custodian-avatar {
+        width: 90px;
+        height: 90px;
+    }
+
+    .avatar-speech {
+        min-width: 160px;
+        bottom: 100px;
+    }
+
 }
 
 @media only screen and (max-width: 575px) {

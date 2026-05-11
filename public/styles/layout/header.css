@@ -61,6 +61,7 @@
 
 .menu .nav-link.show,
 .menu .nav-link:hover,
+.menu .nav-link.hover,
 .nav-link:focus-visible {
     background-color: var(--blue-primary-hover);
     color: inherit;
@@ -102,7 +103,8 @@
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-.dropdown-menu .dropdown-item:hover {
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item.hover {
     background-color: var(--blue-primary-hover);
     box-shadow: none;
 }

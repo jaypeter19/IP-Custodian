@@ -82,6 +82,10 @@
     width: 100%;
 }
 
+.details-section a.hover::after {
+    width: 100%;
+}
+
 /* pricing */
 
 .pricing-section h2 {
@@ -118,6 +122,14 @@
 }
 
 .pricing-options .btn-orange:hover::after {
+    content: url(../../assets/icons/arrow-orange.svg);
+    right: 10%;
+    bottom: 55%;
+    width: 18px;
+    height: 18px;
+}
+
+.pricing-options .btn-orange.hover::after {
     content: url(../../assets/icons/arrow-orange.svg);
     right: 10%;
     bottom: 55%;

@@ -460,6 +460,7 @@
 }
 
 .services-options .service-actions a:hover,
+.services-options .service-actions a.hover,
 .services-options .service-actions a:focus {
     background-color: var(--white-primary);
     color: var(--black-primary);
@@ -913,7 +914,7 @@
 
 @media only screen and (max-width: 575px) {
 
-      .hero-section {
+    .hero-section {
         min-height: 30vh;
     }
 

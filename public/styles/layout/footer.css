@@ -61,8 +61,18 @@ footer .container-fluid {
     width: 100%;
 }
 
+.footer-contact a.hover::after,
+.footer-menu a.hover::after {
+    width: 100%;
+}
+
 .footer-contact a:hover,
 .footer-menu a:hover {
+    color: var(--background-primary);
+}
+
+.footer-contact a.hover,
+.footer-menu a.hover {
     color: var(--background-primary);
 }
 
@@ -96,6 +106,10 @@ footer .container-fluid {
     opacity: 0.8;
 }
 
+.footer-social a.hover img {
+    opacity: 0.8;
+}
+
 .footer-copyright p {
     display: inline-block;
     margin: 0;
@@ -111,5 +125,9 @@ footer .container-fluid {
 }
 
 .footer-copyright a:hover {
+    color: var(--background-primary);
+}
+
+.footer-copyright a.hover {
     color: var(--background-primary);
 }

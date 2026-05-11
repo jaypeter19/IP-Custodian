@@ -96,5 +96,44 @@ document.addEventListener('DOMContentLoaded', () => {
     if (aboutSection) {
         aboutObserver.observe(aboutSection);
     }
+
+    // Mobile Link Click Animation Delay
+    const isMobileDevice = () => {
+        return window.innerWidth <= 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    };
+
+    document.querySelectorAll('a').forEach((link) => {
+
+        link.addEventListener('click', (e) => {
+            // Only apply delay on mobile devices
+            if (!isMobileDevice()) return;
+
+            // Don't apply delay to anchor links or links without href
+            const href = link.getAttribute('href');
+            if (!href || href.startsWith('#') || href === '') return;
+
+            // Don't prevent default for links that open in new tab or are external navigation helpers
+            if (link.target === '_blank' || link.getAttribute('rel')?.includes('external')) return;
+
+            e.preventDefault();
+
+            // Add hover class to trigger animation
+            link.classList.add('hover');
+
+            // Calculate animation duration from CSS transitions
+            const style = window.getComputedStyle(link);
+            const transitionDuration = style.transitionDuration || '0.3s';
+            const duration = parseFloat(transitionDuration) * 1000; // Convert to milliseconds
+
+            // Add buffer time for animation to complete (e.g., 300ms buffer)
+            const totalDelay = duration + 300;
+
+            // Navigate after animation completes
+            setTimeout(() => {
+                window.location.href = href;
+            }, totalDelay);
+        });
+
+    });
 });
 

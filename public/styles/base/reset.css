@@ -50,6 +50,11 @@ a {
     text-decoration: none;
 }
 
+/* Mobile hover effect simulation */
+a.hover {
+    --mobile-hover-active: true;
+}
+
 strong {
     font-family: inherit;
     font-weight: 600;

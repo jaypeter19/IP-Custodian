@@ -108,7 +108,7 @@
 }
 
 .pricing-options .btn-orange::after {
-    content: url(../../assets/icons/icon17.svg);
+    content: url(../../assets/icons/arrow-white.svg);
     position: absolute;
     right: 10%;
     bottom: 57%;
@@ -118,7 +118,7 @@
 }
 
 .pricing-options .btn-orange:hover::after {
-    content: url(../../assets/icons/icon18.svg);
+    content: url(../../assets/icons/arrow-orange.svg);
     right: 10%;
     bottom: 55%;
     width: 18px;

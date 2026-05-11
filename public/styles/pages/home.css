@@ -642,7 +642,7 @@
 @media only screen and (max-width: 1400px) {
 
 
-    .about-section {
+    .about-section::before {
         background-size: 116%;
     }
 
@@ -667,7 +667,7 @@
         font-size: 62px;
     }
 
-    .about-section {
+    .about-section::before {
         background-size: 100%;
     }
 
@@ -709,7 +709,7 @@
 
 @media only screen and (max-width: 993px) {
 
-    .about-section {
+    .about-section::before {
         background-size: 116%;
     }
 
@@ -879,7 +879,7 @@
 
 @media only screen and (max-width: 767px) {
 
-    .about-section {
+    .about-section::before {
         background-image: url(../../assets/images/about02.png);
         background-position-x: 107%;
         background-position-y: center;
@@ -932,7 +932,7 @@
         width: 160px;
     }
 
-    .about-section {
+    .about-section::before {
         background-image: url(../../assets/images/about02.png);
         background-position-y: center;
         background-size: 48%;
@@ -1068,7 +1068,7 @@
         font-size: 16px;
     }
 
-    .about-section {
+    .about-section::before {
         background-image: none;
     }
 

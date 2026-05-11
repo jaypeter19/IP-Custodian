@@ -1,3 +1,9 @@
+window.addEventListener("load", () => {
+    const heroSection = document.querySelector(".hero-section");
+
+    heroSection.classList.add("loaded");
+});
+
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -66,3 +72,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+

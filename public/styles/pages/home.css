@@ -102,6 +102,63 @@
     }
 }
 
+/* Hero Content Reveal Animation */
+
+/* Estado inicial */
+
+.hero-section .hero-text h1,
+.hero-section .hero-text p,
+.hero-section .btn-orange,
+.hero-section .btn-blue {
+    opacity: 0;
+    transform: translateY(30px);
+    filter: blur(6px);
+    pointer-events: none;
+}
+
+/* Estado animado */
+
+.hero-section .hero-text h1,
+.hero-section.loaded .hero-text p,
+.hero-section.loaded .btn-orange,
+.hero-section.loaded .btn-blue {
+    animation: heroReveal 0.9s ease-out forwards;
+    pointer-events: auto;
+}
+
+.hero-section .hero-text h1{
+    animation-delay: 0.25s;
+}
+
+.hero-section.loaded .hero-text p {
+    animation-delay: 0.35s;
+}
+
+
+.hero-section.loaded .btn-orange {
+    animation-delay: 0.55s;
+}
+
+.hero-section.loaded .btn-blue {
+    animation-delay: 0.85s;
+}
+
+/* Keyframe compartilhado */
+
+@keyframes heroReveal {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+        filter: blur(6px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
+}
+
 /* About */
 .about-section {
     background-image: url(../../assets/images/about01.png);

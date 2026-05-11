@@ -25,6 +25,8 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Mapbox GL JS -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="public/styles/styles.css">
 </head>
@@ -91,7 +93,7 @@
         <section class="about-section">
             <div class="container-fluid">
                 <div class="row justify-content-center align-items-center">
-                    <div class="col-md-8 text-center">
+                    <div class="col-md-8 text-center" data-aos="fade-down" data-aos-delay="500" data-aos-duration="800" data-aos-easing="ease-in-out">
                         <h2>Who we are?</h2>
                         <h3>Transparency & Choice</h3>
                         <p><strong>IP Custodian</strong> is a platform, connecting you with your global network of
@@ -107,7 +109,7 @@
                             costs and more flexibility.</p>
                     </div>
                     <div class="col-12 text-center">
-                        <p class="large">You have the <strong>choice</strong>, you´re in <strong>control</strong>.</p>
+                        <p class="large" data-aos="zoom-out" data-aos-easing="ease-in-out">You have the <strong>choice</strong>, you´re in <strong>control</strong>.</p>
                     </div>
                 </div>
             </div>
@@ -510,6 +512,14 @@
     <script src="public/js/config.js"></script>
     <script src="public/js/mapbox.js"></script>
     <script src="public/js/forms.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'DOMContentLoaded',
+            disableMutationObserver: false,
+            once: true
+        });
+    </script>
 </body>
 
 </html>

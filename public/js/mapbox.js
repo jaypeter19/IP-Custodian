@@ -12,8 +12,8 @@ const isMobile = window.matchMedia('(max-width: 575px)').matches;
 const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/jptelles19/cmnz4m2lt008r01qu2a5095j9',
-    center: isMobile ? [-62, 12] : [-70, 12],
-    zoom: isMobile ? 1.2 : 2.3
+    center: isMobile ? [-62, 12] : [-60, 12],
+    zoom: isMobile ? 1.2 : 2
 });
 
 fetch(geojsonUrl)

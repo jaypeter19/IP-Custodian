@@ -66,10 +66,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-
-    // Hero fade animation 
+    // Hero Animation
     const heroSection = document.querySelector(".hero-section");
 
     heroSection.classList.add("loaded");
+
+
+    // About Background Reveal On Scroll
+    const aboutSection = document.querySelector(".about-section");
+
+    const aboutObserver = new IntersectionObserver((entries, observer) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("loaded");
+
+                // anima apenas uma vez
+                observer.unobserve(entry.target);
+            }
+
+        });
+
+    }, {
+        threshold: 0.25
+    });
+
+    if (aboutSection) {
+        aboutObserver.observe(aboutSection);
+    }
 });
 

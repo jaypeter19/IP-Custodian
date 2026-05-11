@@ -53,7 +53,7 @@ footer .container-fluid {
     width: 0;
     height: 2px;
     background-color: var(--background-primary);
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-contact a:hover::after,
@@ -61,18 +61,8 @@ footer .container-fluid {
     width: 100%;
 }
 
-.footer-contact a.hover::after,
-.footer-menu a.hover::after {
-    width: 100%;
-}
-
 .footer-contact a:hover,
 .footer-menu a:hover {
-    color: var(--background-primary);
-}
-
-.footer-contact a.hover,
-.footer-menu a.hover {
     color: var(--background-primary);
 }
 
@@ -99,14 +89,10 @@ footer .container-fluid {
 .footer-social a {
     display: inline-block;
     padding-right: 14px;
-    transition: all 0.25s ease;
+    transition: all 0.3s ease;
 }
 
 .footer-social a:hover img {
-    opacity: 0.8;
-}
-
-.footer-social a.hover img {
     opacity: 0.8;
 }
 
@@ -121,13 +107,9 @@ footer .container-fluid {
     font-family: var(--font-tertiary);
     font-weight: 400;
     font-size: 18px;
-    transition: color 0.25s ease;
+    transition: color 0.3s ease;
 }
 
 .footer-copyright a:hover {
-    color: var(--background-primary);
-}
-
-.footer-copyright a.hover {
     color: var(--background-primary);
 }

@@ -24,11 +24,6 @@
     color: var(--orange-primary-normal);
 }
 
-.btn-orange.hover {
-    background-color: var(--white-primary-hover);
-    color: var(--orange-primary-normal);
-}
-
 .btn-blue {
     color: var(--white-primary);
     font-family: var(--font-primary);
@@ -42,11 +37,6 @@
 }
 
 .btn-blue:hover {
-    background-color: var(--white-primary-hover);
-    color: var(--blue-primary-normal);
-}
-
-.btn-blue.hover {
     background-color: var(--white-primary-hover);
     color: var(--blue-primary-normal);
 }

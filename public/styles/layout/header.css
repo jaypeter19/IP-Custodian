@@ -61,7 +61,6 @@
 
 .menu .nav-link.show,
 .menu .nav-link:hover,
-.menu .nav-link.hover,
 .nav-link:focus-visible {
     background-color: var(--blue-primary-hover);
     color: inherit;
@@ -84,9 +83,9 @@
     border-radius: var(--radius-md);
     pointer-events: none;
     transition:
-        opacity 0.2s ease-in,
-        transform 0.2s ease-in,
-        visibility 0.2s ease-in;
+        opacity 0.3s ease-in,
+        transform 0.3s ease-in,
+        visibility 0.3s ease-in;
 }
 
 .navbar-nav .dropdown-menu.show {
@@ -103,8 +102,7 @@
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
-.dropdown-menu .dropdown-item:hover,
-.dropdown-menu .dropdown-item.hover {
+.dropdown-menu .dropdown-item:hover{
     background-color: var(--blue-primary-hover);
     box-shadow: none;
 }

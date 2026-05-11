@@ -127,7 +127,7 @@
     pointer-events: auto;
 }
 
-.hero-section.loaded .hero-text h1{
+.hero-section.loaded .hero-text h1 {
     animation-delay: 0.25s;
 }
 
@@ -190,9 +190,7 @@
 /* Estado animado */
 
 .about-section.loaded::before {
-    animation: aboutBackgroundReveal 1.8s
-        cubic-bezier(0.16, 1, 0.3, 1)
-        forwards;
+    animation: aboutBackgroundReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
 @keyframes aboutBackgroundReveal {
@@ -663,6 +661,10 @@
 
 @media only screen and (max-width: 1200px) {
 
+    .hero-section {
+        min-height: 50vh;
+    }
+
     .hero-section .hero-text h1 {
         font-size: 62px;
     }
@@ -910,6 +912,10 @@
 }
 
 @media only screen and (max-width: 575px) {
+
+      .hero-section {
+        min-height: 30vh;
+    }
 
     .hero-section .hero-text h1 {
         font-size: 46px;

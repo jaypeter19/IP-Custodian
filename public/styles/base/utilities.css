@@ -44,9 +44,9 @@
 }
 
 .marker {
-    content: url(../../assets/icons/icon19.png);
-    width: 30px;
-    height: 30px;
+    content: url(../../assets/images/custodian-avatar.png);
+    width: 120px;
+    height: 120px;
     cursor: pointer;
 }
 

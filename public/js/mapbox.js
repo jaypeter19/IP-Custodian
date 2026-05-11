@@ -13,8 +13,10 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/jptelles19/cmnz4m2lt008r01qu2a5095j9',
     center: isMobile ? [-62, 12] : [-60, 12],
-    zoom: isMobile ? 1.2 : 2
+    zoom: isMobile ? 1 : 2
 });
+
+map.scrollZoom.disable();
 
 fetch(geojsonUrl)
     .then((response) => {

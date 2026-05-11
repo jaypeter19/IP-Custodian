@@ -47,14 +47,16 @@
     border-radius: var(--radius-md);
     color: var(--black-navbar);
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 1px;
+    margin-left: 1px;
 }
 
 .menu .nav-link.active {
     background-color: var(--blue-primary-normal);
     color: var(--white-primary) !important;
     border-radius: var(--radius-md);
-    margin-right: 1px;
-    margin-left: 1px;
 }
 
 .menu .nav-link.show,

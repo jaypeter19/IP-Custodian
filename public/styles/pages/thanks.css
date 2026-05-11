@@ -1,0 +1,129 @@
+.thanks-section {
+    padding-top: 0;
+}
+
+.thankyou-page {
+    position: relative;
+}
+
+
+.thankyou-page .custodian-logo {
+    position: absolute;
+    left: 30px;
+}
+
+.thankyou-page ._header {
+    background: var(--background-primary);
+    padding: 100px 30px;
+    text-align: center;
+}
+
+.thankyou-page ._header h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    color: var(--blue-primary-normal);
+    margin: 0;
+}
+
+.thankyou-page ._body {
+    margin: -70px 0 30px;
+}
+
+.thankyou-page ._body ._box {
+    margin: auto;
+    max-width: 40%;
+    padding: 50px;
+    background: var(--blue-primary-normal);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--box-shadow-btn);
+    -webkit-box-shadow: var(--box-shadow-btn);
+}
+
+.thankyou-page ._body ._box h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blue-primary-light);
+    text-align: center;
+}
+
+._footer {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+._footer .btn-orange {
+    width: 300px;
+    margin-right: 0;
+}
+
+._footer p {
+    color: var(--black-primary);
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+._footer .contact {
+    color: var(--black-primary);
+    text-align: center;
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+._footer .contact:hover {
+    color: var(--blue-primary-dark);
+}
+
+@media only screen and (max-width: 993px) {
+    .thankyou-page .custodian-logo {
+        top: 0%;
+        left: 10px;
+        width: 100px;
+    }
+
+
+    .thankyou-page ._body ._box {
+        max-width: 80%;
+    }
+
+
+    ._footer .btn-orange {
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+ .thankyou-page .custodian-logo {
+        top: 0%;
+        left: 10px;
+        width: 80px;
+    }
+
+}
+
+
+@media only screen and (max-width: 575px) {
+
+    .thankyou-page .custodian-logo {
+        top: 0%;
+        left: 10px;
+        width: 60px;
+        height: auto;
+    }
+
+
+    .thankyou-page ._header h1 {
+        font-size: 2rem;
+    }
+
+
+    .thankyou-page ._body ._box {
+        max-width: 90%;
+        padding: 35px;
+    }
+
+
+    ._footer .btn-orange {
+        font-size: 16px;
+    }
+
+}

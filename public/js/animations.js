@@ -57,6 +57,11 @@ document.addEventListener('DOMContentLoaded', () => {
         frame();
     };
 
+    // Trigger confetti on thanks page load
+    if (window.location.pathname.includes('thanks.html')) {
+        fireTroubleConfetti();
+    }
+
     if (troubleIcon && troubleBtn) {
         troubleBtn.addEventListener('click', () => {
             troubleIcon.classList.remove('icon-animation');

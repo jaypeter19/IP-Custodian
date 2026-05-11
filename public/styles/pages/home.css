@@ -666,7 +666,7 @@
     }
 
     .hero-section .hero-text h1 {
-        font-size: 62px;
+        font-size: 58px;
     }
 
     .about-section::before {
@@ -1016,6 +1016,10 @@
         margin: 0px auto;
     }
 
+    .services-options .service-option {
+        height: 160px;
+    }
+
     .services-options .service-option h3 {
         font-size: 32px;
     }
@@ -1248,7 +1252,7 @@
     }
 
     .services-options .service-option {
-        height: 238px;
+        height: 140px;
     }
 
     .services-section p,

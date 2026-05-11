@@ -1,9 +1,3 @@
-window.addEventListener("load", () => {
-    const heroSection = document.querySelector(".hero-section");
-
-    heroSection.classList.add("loaded");
-});
-
 document.addEventListener('DOMContentLoaded', () => {
 
 
@@ -71,5 +65,11 @@ document.addEventListener('DOMContentLoaded', () => {
             fireTroubleConfetti();
         });
     }
+
+
+    // Hero fade animation 
+    const heroSection = document.querySelector(".hero-section");
+
+    heroSection.classList.add("loaded");
 });
 

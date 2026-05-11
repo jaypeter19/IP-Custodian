@@ -94,8 +94,8 @@
 /* Custodian Avatar */
 .custodian-avatar {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     width: 120px;
     height: 120px;
     z-index: 999;

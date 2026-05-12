@@ -29,7 +29,15 @@
     <link rel="stylesheet" href="../public/styles/styles.css">
 </head>
 
-<body>
+<body class="is-loading">
+    <div class="page-loader" aria-live="polite">
+        <div class="page-loader-content">
+            <div class="page-loader-brand"><span class="ip-dark">IP</span> Custodian</div>
+            <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
     <header>
         <nav class="navbar navbar-expand-md">
             <div class="container-fluid px-0">
@@ -226,6 +234,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="../public/js/index.js"></script>
+    <script src="../public/js/preloader.js"></script>
 </body>
 
 </html>

@@ -29,7 +29,15 @@
     <script src="../public/js/animations.js"></script>
 </head>
 
-<body>
+<body class="is-loading">
+    <div class="page-loader" aria-live="polite">
+        <div class="page-loader-content">
+            <div class="page-loader-brand"><span class="ip-dark">IP</span> Custodian</div>
+            <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
     <main>
         <section class="thanks-section">
             <div class="thankyou-page">
@@ -53,6 +61,7 @@
             <a class="btn btn-orange" href="/">Back to home page</a>
         </div>
     </footer>
+    <script src="../public/js/preloader.js"></script>
 </body>
 
 </html>

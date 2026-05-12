@@ -29,7 +29,15 @@
     <link rel="stylesheet" href="../public/styles/styles.css">
 </head>
 
-<body>
+<body class="is-loading">
+    <div class="page-loader" aria-live="polite">
+        <div class="page-loader-content">
+            <div class="page-loader-brand"><span class="ip-dark">IP</span> Custodian</div>
+            <div class="spinner-border text-info" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
     <!-- HEADER START -->
     <header>
         <nav class="navbar navbar-expand-md">
@@ -229,6 +237,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script src="../public/js/carousel.js"></script>
     <script src="../public/js/index.js"></script>
+    <script src="../public/js/preloader.js"></script>
 </body>
 
 </html>

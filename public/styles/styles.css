@@ -134,15 +134,6 @@
 
 @media only screen and (max-width: 420px) {
 
-    .navbar .navbar-brand {
-        font-size: 30px;
-    }
-
-    .btn-orange,
-    .btn-blue {
-        font-size: 18px;
-    }
-
     .map-section h2 {
         font-size: 28px;
         text-align: center;
@@ -185,18 +176,9 @@
         width: 130px;
     }
 
-    .menu .nav-link,
-    .contact .nav-link {
-        font-size: 16px;
-    }
-
     .btn-orange,
     .btn-blue {
         max-width: 200px;
-    }
-
-    .contact-section .form label {
-        font-size: 20px;
     }
 
     .contact-section .form .btn-blue {

@@ -323,10 +323,6 @@
         .cta-services-section h2 {
             font-size: 26px;
         }
-
-        .cta-services-section p {
-            font-size: 16px;
-        }
     }
 
     @media only screen and (max-width: 430px) {

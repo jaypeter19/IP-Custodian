@@ -6,13 +6,10 @@
 
 .hero-section {
     position: relative;
-    background-image: url(../../assets/images/hero01.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    background: url(../../assets/images/hero01.jpg) center/cover no-repeat;
     border-bottom-left-radius: var(--radius-lg);
     border-bottom-right-radius: var(--radius-lg);
-    overflow: hidden;
     min-height: 70vh;
 }
 
@@ -29,11 +26,8 @@
     z-index: 1;
 }
 
-.hero-section .hero-text {
-    margin: 2rem auto;
-}
-
 .hero-section .hero-text h1 {
+    margin-top: 2rem;
     font-family: var(--font-primary);
     font-size: 96px;
     font-weight: bold;
@@ -45,8 +39,6 @@
     display: inline-block;
     width: 2.5em;
     height: 0.93em;
-    text-align: left;
-    vertical-align: baseline;
 }
 
 .hero-word-swap span {
@@ -103,63 +95,6 @@
     }
 }
 
-/* Hero Content Reveal Animation */
-
-/* Estado inicial */
-
-.hero-section .hero-text h1,
-.hero-section .hero-text p,
-.hero-section .btn-orange,
-.hero-section .btn-blue {
-    opacity: 0;
-    transform: translateY(30px);
-    filter: blur(6px);
-    pointer-events: none;
-}
-
-/* Estado animado */
-
-.hero-section.loaded .hero-text h1,
-.hero-section.loaded .hero-text p,
-.hero-section.loaded .btn-orange,
-.hero-section.loaded .btn-blue {
-    animation: heroReveal 0.9s ease-in-out forwards;
-    pointer-events: auto;
-}
-
-.hero-section.loaded .hero-text h1 {
-    animation-delay: 0.25s;
-}
-
-.hero-section.loaded .hero-text p {
-    animation-delay: 0.35s;
-}
-
-
-.hero-section.loaded .btn-orange {
-    animation-delay: 0.55s;
-}
-
-.hero-section.loaded .btn-blue {
-    animation-delay: 0.85s;
-}
-
-/* Keyframe compartilhado */
-
-@keyframes heroReveal {
-    0% {
-        opacity: 0;
-        transform: translateY(30px);
-        filter: blur(6px);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
-    }
-}
-
 /* About */
 .about-section {
     position: relative;
@@ -190,7 +125,7 @@
 /* Estado animado */
 
 .about-section.loaded::before {
-    animation: aboutBackgroundReveal 3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: aboutBackgroundReveal 2.5s ease-in-out forwards;
 }
 
 @keyframes aboutBackgroundReveal {
@@ -209,7 +144,6 @@
 }
 
 .about-section h2 {
-    font-family: var(--font-primary);
     font-weight: bolder;
     font-size: 96px;
     margin: 48px 0px 14px 0px;
@@ -344,7 +278,6 @@
 }
 
 .card p {
-    font-family: var(--font-tertiary);
     font-size: 22px;
     font-weight: 500;
     text-align: justify;
@@ -450,9 +383,7 @@
     align-items: center;
     justify-content: center;
     min-height: 56px;
-    padding: 14px 18px;
     border: 1px solid var(--white-primary);
-    color: var(--white-primary);
     font-weight: 700;
     text-align: center;
     text-decoration: none;
@@ -468,7 +399,6 @@
 
 .services-section p {
     margin-bottom: 0;
-    font-family: var(--font-tertiary);
     font-weight: 600;
     color: var(--black-primary);
     font-size: 32px;
@@ -663,7 +593,7 @@
 @media only screen and (max-width: 1200px) {
 
     .hero-section {
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
     .hero-section .hero-text h1 {
@@ -889,14 +819,6 @@
         background-size: 48%;
     }
 
-    .about-section h2 {
-        font-size: 48px;
-    }
-
-    .about-section h3 {
-        font-size: 22px;
-    }
-
     .about-section p:not(.large) {
         padding: 0px 155px 0px 0px;
         font-size: 16px;
@@ -943,14 +865,6 @@
         background-image: url(../../assets/images/about02.png);
         background-position-y: center;
         background-size: 48%;
-    }
-
-    .about-section h2 {
-        font-size: 48px;
-    }
-
-    .about-section h3 {
-        font-size: 22px;
     }
 
     .about-section p:not(.large) {
@@ -1093,11 +1007,6 @@
         font-size: 16px;
     }
 
-    .about-section .large {
-        margin: 0;
-        font-size: 20px;
-    }
-
     .video-section {
         height: 260px;
     }
@@ -1133,13 +1042,8 @@
         font-size: 18px;
     }
 
-    #icon-trouble {
-        max-width: 100%;
-    }
-
     .services-section .btn-trouble {
         margin: 8px auto;
-        font-size: 18px;
     }
 
     .faq-section .faq-title h2 {

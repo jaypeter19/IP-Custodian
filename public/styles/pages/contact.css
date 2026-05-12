@@ -344,10 +344,6 @@
 
 @media only screen and (max-width:575px) {
 
-    .details-section a {
-        font-size: 14px;
-    }
-
     .pricing-modal .modal-dialog {
         max-width: 450px;
         margin: 0 auto;
@@ -367,10 +363,6 @@
         min-height: 150px;
         border-radius: 0;
         margin: 0;
-    }
-
-    .pricing-plan h3 {
-        font-size: 32px;
     }
 
     .pricing-plan ul li {

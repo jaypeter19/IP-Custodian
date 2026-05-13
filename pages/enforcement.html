@@ -25,6 +25,8 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <!-- Mapbox GL JS -->
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
+    <!-- AOS Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../public/styles/styles.css">
 </head>
@@ -72,7 +74,7 @@
             <div class="container-fluid">
                 <div class="row align-items-end justify-content-start">
                     <div class="col-12">
-                        <h1>Watch and Enforcement</h1>
+                        <h1 data-aos="fade-up" data-aos-easing="ease-in-out">Watch and Enforcement</h1>
                     </div>
                 </div>
             </div>
@@ -80,7 +82,8 @@
         <section class="custodian-about-section">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-12">
+                    <div class="col-12" data-aos="fade-down" data-aos-easing="ease-in-out"
+                        data-aos-delay="300">
                         <h2>Automated Watch and Enforcement</h2>
                         <p>Global trademark watch identifies third parties, attempting to register brand names, which
                             could be confusingly similar to yours. Taking early action is key to improving chances of
@@ -103,7 +106,8 @@
                     </div>
                 </div>
                 <div class="services-diy mb-5">
-                    <div class="row justify-content-center justify-content-lg-evenly align-items-center">
+                    <div class="row justify-content-center justify-content-lg-evenly align-items-center" data-aos="flip-right" data-aos-easing="ease-in"
+                    data-aos-delay="200">
                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-0">
                             <h3>Do It Yourself</h3>
                             <p>Use the Bridge-it platform to connect your watch results with your foreign counsel to
@@ -134,8 +138,8 @@
                     </div>
                 </div>
                 <div class="services-handle" id="letushandle">
-                    <div
-                        class="row d-flex flex-row-reverse justify-content-center justify-content-lg-evenly align-items-center">
+                    <div class="row d-flex flex-row-reverse justify-content-center justify-content-lg-evenly align-items-center" data-aos="flip-right" data-aos-easing="ease-in"
+                    data-aos-delay="400">
                         <div class="col-12 col-sm-6 col-md-6 col-lg-4 mb-3 mb-sm-0">
                             <h3>Let Us Handle It</h3>
                             <p>Want us to take care of it all for you? Sure! We can set up a watch programme, monitor
@@ -227,6 +231,21 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="../public/js/index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        window.initScrollAnimations = () => {
+            if (window.scrollAnimationsInitialized || !window.AOS) {
+                return;
+            }
+
+            window.scrollAnimationsInitialized = true;
+
+            AOS.init({
+                disableMutationObserver: false,
+                once: true
+            });
+        };
+    </script>
     <script src="../public/js/preloader.js"></script>
 </body>
 

@@ -1,17 +1,35 @@
+const initScrollAnimations = () => {
+    if (typeof window.initScrollAnimations === 'function') {
+        window.initScrollAnimations();
+    }
+};
+
 const hidePageLoader = () => {
     const loader = document.querySelector('.page-loader');
 
     document.body.classList.remove('is-loading');
 
     if (!loader) {
+        initScrollAnimations();
         return;
     }
 
     loader.classList.add('is-hidden');
 
-    loader.addEventListener('transitionend', () => {
+    let loadingFinished = false;
+
+    const finishLoading = () => {
+        if (loadingFinished) {
+            return;
+        }
+
+        loadingFinished = true;
         loader.remove();
-    }, { once: true });
+        initScrollAnimations();
+    };
+
+    loader.addEventListener('transitionend', finishLoading, { once: true });
+    window.setTimeout(finishLoading, 600);
 };
 
 if (document.readyState === 'complete') {

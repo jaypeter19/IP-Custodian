@@ -125,7 +125,7 @@
 /* Estado animado */
 
 .about-section.loaded::before {
-    animation: aboutBackgroundReveal 2.5s ease-in-out forwards;
+    animation: aboutBackgroundReveal 0.8s ease-in-out forwards;
 }
 
 @keyframes aboutBackgroundReveal {

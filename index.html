@@ -528,11 +528,18 @@
     <script src="public/js/forms.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({
-            startEvent: 'DOMContentLoaded',
-            disableMutationObserver: false,
-            once: true
-        });
+        window.initScrollAnimations = () => {
+            if (window.scrollAnimationsInitialized || !window.AOS) {
+                return;
+            }
+
+            window.scrollAnimationsInitialized = true;
+
+            AOS.init({
+                disableMutationObserver: false,
+                once: true
+            });
+        };
     </script>
     <script src="public/js/preloader.js"></script>
 </body>

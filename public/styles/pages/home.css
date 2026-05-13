@@ -180,14 +180,21 @@
 
 .video-section {
     position: relative;
-    background-image: url(../../assets/videos/IPCustodian.gif);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: var(--black-primary);
     height: 560px;
     display: flex;
     align-items: center;
     overflow: hidden;
+}
+
+.video-section-media {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 0;
 }
 
 .video-section::after {
@@ -195,12 +202,12 @@
     position: absolute;
     inset: 0;
     background-color: rgb(0, 0, 0, 0.35);
-    z-index: 0;
+    z-index: 1;
 }
 
 .video-section .container-fluid {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .video-section h2 {

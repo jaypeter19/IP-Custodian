@@ -207,11 +207,6 @@
   position: relative;
 }
 
-.keys-about-section img {
-  display: inline-block;
-  position: absolute;
-}
-
 .keys-about-section .values-list {
   padding-left: 0;
   list-style-position: inside;
@@ -234,14 +229,6 @@
       var(--pink-gradient) 12%,
       var(--blue-primary-normal) 100%);
   background-clip: text;
-}
-
-.key-mission img {
-  right: 102%;
-}
-
-.key-values img {
-  left: 102%;
 }
 
 .key-vision {
@@ -355,11 +342,6 @@
     font-size: 64px;
   }
 
-  .keys-about-section img {
-    width: 38px;
-    height: auto;
-  }
-
   .keys-about-section span {
     font-size: 56px;
   }
@@ -395,11 +377,6 @@
 
   .keys-about-section {
     padding: var(--section-padding-lg);
-  }
-
-  .keys-about-section img {
-    width: 30px;
-    bottom: 50%;
   }
 
   .keys-about-section span {
@@ -485,10 +462,6 @@
 
   .custodian-about-section p {
     font-size: 16px;
-  }
-
-  .keys-about-section img {
-    width: 28px;
   }
 
   .keys-about-section span {

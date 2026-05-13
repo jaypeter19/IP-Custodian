@@ -22,6 +22,10 @@
     height: auto;
 }
 
+.recaptcha-field.is-invalid .invalid-feedback {
+    display: block;
+}
+
 .contact-section .custodian-logo {
     height: 110px;
     position: absolute;

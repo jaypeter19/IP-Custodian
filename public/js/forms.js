@@ -3,10 +3,30 @@
 
   const forms = document.querySelectorAll('.needs-validation')
 
+  const hasRecaptchaResponse = form => {
+    const recaptcha = form.querySelector('.g-recaptcha')
+
+    if (!recaptcha) {
+      return true
+    }
+
+    const response = form.querySelector('textarea[name="g-recaptcha-response"]')
+    const isComplete = Boolean(response && response.value.trim())
+    const field = recaptcha.closest('.recaptcha-field')
+
+    if (field) {
+      field.classList.toggle('is-invalid', !isComplete)
+    }
+
+    return isComplete
+  }
+
   // Loop over them and prevent submission
   Array.from(forms).forEach(form => {
     form.addEventListener('submit', event => {
-      if (!form.checkValidity()) {
+      const recaptchaIsComplete = hasRecaptchaResponse(form)
+
+      if (!form.checkValidity() || !recaptchaIsComplete) {
         event.preventDefault()
         event.stopPropagation()
       } else {

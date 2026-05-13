@@ -27,6 +27,8 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/enterprise.js" async defer></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../public/styles/styles.css">
 </head>
@@ -104,6 +106,11 @@
                             <div class="mb-3">
                                 <label for="help" class="form-label">What can we help with?</label>
                                 <textarea rows="6" class="form-control" name="help" id="help" required></textarea>
+                            </div>
+                            <div class="mb-3 recaptcha-field">
+                                <div class="g-recaptcha" data-sitekey="6Le-yegsAAAAAEIwnTDWoe9MM1kxyrKKuoYNagGX"
+                                    data-action="CONTACT"></div>
+                                <div class="invalid-feedback">Please complete the reCAPTCHA.</div>
                             </div>
                             <div class="text-center">
                                 <button type="submit" class="btn btn-blue">

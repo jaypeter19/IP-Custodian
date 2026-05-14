@@ -1148,6 +1148,8 @@
     .differentiatior-section .carousel .card {
         height: 250px;
         padding: 24px;
+        justify-content: center;
+        border-radius: var(--radius-md-mobile);
     }
 
     .card-icon img {
@@ -1155,14 +1157,14 @@
         width: 75px;
         left: -7%;
         top: -15%;
-    }
+    } 
 
     .card h3 {
-        font-size: 22px;
+        font-size: 28px;
     }
 
     .card p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .services-section h2 {

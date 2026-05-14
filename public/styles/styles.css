@@ -108,8 +108,9 @@
     }
 
     .custodian-avatar {
-        width: 90px;
-        height: 90px;
+        width: 120px;
+        height: 120px;
+        right: 0px;
     }
 
     .avatar-speech {

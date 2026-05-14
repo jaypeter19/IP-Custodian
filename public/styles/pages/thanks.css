@@ -56,6 +56,17 @@
     margin-right: 0;
 }
 
+._footer .footer-cookie-btn {
+    display: block;
+    margin: 0 auto 16px;
+    padding: 0;
+    color: var(--black-primary);
+    font-family: var(--font-primary);
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
 ._footer p {
     color: var(--black-primary);
     font-family: var(--font-primary);
@@ -69,6 +80,10 @@
 }
 
 ._footer .contact:hover {
+    color: var(--blue-primary-dark);
+}
+
+._footer .footer-cookie-btn:hover {
     color: var(--blue-primary-dark);
 }
 

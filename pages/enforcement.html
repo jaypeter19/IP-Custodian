@@ -27,6 +27,9 @@
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.10.0/mapbox-gl.css" rel="stylesheet">
     <!-- AOS Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Cookie Library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/vanilla-cookieconsent@3.1.0/dist/cookieconsent.umd.js"></script>
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../public/styles/styles.css">
 </head>
@@ -220,6 +223,7 @@
                 <div class="col-xl-6 text-center text-md-end">
                     <a href="../public/assets/uploads/IP Custodian Privacy Policy.pdf" target="_blank">Privacy
                         Policy</a>
+                    <button type="button" id="manageCookies" class="footer-cookie-btn">Cookie Preferences</button>
                     <p>IP Custodian &copy; 2026</p>
                 </div>
             </div>
@@ -231,6 +235,7 @@
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
     <script src="../public/js/index.js"></script>
+    <script defer src="../public/js/cookies.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         window.initScrollAnimations = () => {

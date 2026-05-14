@@ -96,20 +96,27 @@ footer .container-fluid {
     opacity: 0.8;
 }
 
-.footer-copyright p {
+.footer-copyright p,
+.footer-copyright button,
+.footer-copyright a  {
     display: inline-block;
     margin: 0;
-    padding: 12px 34px;
+    padding: 12px 12px;
 }
 
 .footer-copyright a,
-.footer-copyright p {
+.footer-copyright p, 
+.footer-copyright button{
     font-family: var(--font-tertiary);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
+    color: var(--white-primary);
     transition: color 0.3s ease;
+    background: none;
+    border: none;
 }
 
-.footer-copyright a:hover {
+.footer-copyright a:hover, 
+.footer-copyright button:hover {
     color: var(--background-primary);
 }

@@ -1,18 +1,20 @@
 .contact-section .form {
     background-color: var(--background-secondary);
     border-radius: var(--radius-sm);
-    padding: 66px;
+    padding: 46px;
 }
 
 .contact-section .form label {
     font-size: var(--font-tertiary);
     font-weight: 300;
-    font-size: 22px;
+    font-size: 18px;
     color: var(--black-primary);
 }
 
-.contact-section .form .form-control {
-    padding: 10px;
+.contact-section .form img {
+    height: 600px;
+    max-height: 600px;
+    width: auto;
 }
 
 .contact-section .form .btn-blue {

@@ -86,8 +86,12 @@
                     <div class="col-sm-10 col-md-6 form">
                         <form action="./thanks.html" class="needs-validation" method="POST" novalidate>
                             <div class="mb-3">
-                                <label for="name" class="form-label">Your name</label>
-                                <input type="text" class="form-control" id="name" name="name" required>
+                                <label for="firstName" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="lastName" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName" required>
                             </div>
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email</label>
@@ -100,15 +104,27 @@
                             <div class="mb-3">
                                 <label for="service" class="form-label">What do you need?</label>
                                 <select name="service" id="service" class="form-control" required>
-                                    <option value="" selected>Select a Solution</option>
+                                    <option value="" selected>Select a Area of Interest</option>
                                     <option value="Renewals">Renewals</option>
                                     <option value="Portfolio Management">Portfolio Management</option>
                                     <option value="Watch and Enforcement">Watch and Enforcement</option>
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="help" class="form-label">What can we help with?</label>
-                                <textarea rows="6" class="form-control" name="help" id="help" required></textarea>
+                                <label for="employees" class="form-label">Number of Employees</label>
+                                <input type="number" min="1" class="form-control" id="employees" name="numEmployees" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="trademark" class="form-label">Number of Trademark Registrations</label>
+                                <input type="number" class="form-control" id="trademark" name="trademarkVolume" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="patent" class="form-label">Number of Patent Registrations</label>
+                                <input type="number" class="form-control" id="patent" name="patentVolume" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="description" class="form-label">What can we help with?</label>
+                                <textarea rows="6" class="form-control" name="description" id="description" required></textarea>
                             </div>
                             <div class="mb-3 recaptcha-field">
                                 <div class="g-recaptcha" data-sitekey="6Le-yegsAAAAAEIwnTDWoe9MM1kxyrKKuoYNagGX"

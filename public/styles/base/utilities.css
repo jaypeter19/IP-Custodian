@@ -52,43 +52,65 @@
 
 .mapboxgl-popup {
     max-width: none !important;
-    width: 300px;
-    padding: 34px;
+    width: min(340px, calc(100vw - 36px));
+    padding: 0;
 }
 
-.mapboxgl-popup-content {
-    background: #fff;
-    border-radius: var(--radius-md);
+.ip-map-popup .mapboxgl-popup-content {
+    background: var(--background-primary);
+    border-radius: 30px;
     box-shadow: var(--box-shadow-btn);
-    padding: 10px 10px 15px;
+    overflow: hidden;
+    padding: 0;
     pointer-events: auto;
     position: relative;
-    background-color: var(--background-primary);
 }
 
-.mapboxgl-popup-close-button {
-    right: 10px;
-    top: 10px;
+.ip-map-popup .mapboxgl-popup-tip {
+    display: none;
 }
 
-.mapboxgl-popup-content h3 {
+.map-popup-card {
+    overflow: hidden;
+}
+
+.map-popup-title {
     font-family: var(--font-primary);
-    font-size: 28x;
+    font-size: 32px;
     font-weight: bolder;
+    margin: 0;
+    padding: 24px 24px 26px;
     color: transparent;
     background: linear-gradient(to right,
             var(--purple-primary-normal) 24%,
             var(--blue-primary-normal) 69%);
     background-clip: text;
-    text-align: start;
+    text-align: center;
 }
 
-.mapboxgl-popup-content p {
+.map-popup-image {
+    align-items: center;
+    aspect-ratio: 2.45 / 1;
+    background-color: rgba(122, 57, 239, 0.18);
+    background-image:
+        linear-gradient(rgba(5, 25, 43, 0.28), rgba(5, 25, 43, 0.28)),
+        var(--map-popup-image, linear-gradient(135deg, rgba(122, 57, 239, 0.34), rgba(0, 143, 151, 0.28)));
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 138px;
+    padding: 24px;
+}
+
+.map-popup-location {
     font-family: var(--font-tertiary);
-    font-size: 19px;
+    font-size: 28px;
     font-weight: bold;
-    color: var(--blue-primary-darker);
-    text-align: start;
+    line-height: 1.1;
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
 }
 
 /* Custodian Avatar */

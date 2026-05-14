@@ -132,6 +132,28 @@
         height: 420px;
     }
 
+     .mapboxgl-popup {
+        width: min(300px, calc(100vw - 28px));
+    }
+
+    .ip-map-popup .mapboxgl-popup-content {
+        border-radius: 24px;
+    }
+
+    .map-popup-title {
+        font-size: 28px;
+        padding: 20px 20px 22px;
+    }
+
+    .map-popup-image {
+        min-height: 120px;
+        padding: 20px;
+    }
+
+    .map-popup-location {
+        font-size: 24px;
+    }
+
 }
 
 @media only screen and (max-width: 420px) {

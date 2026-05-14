@@ -12,7 +12,8 @@
             },
             "properties": {
                 "title": "Ireland",
-                "description": "Dublin, Leinster."
+                "description": "Dublin, Leinster.",
+                "imageUrl": "../assets/images/map-dublin.jpg"
             }
         },
         {
@@ -26,7 +27,8 @@
             },
             "properties": {
                 "title": "United States",
-                "description": "Los Angeles, California."
+                "description": "Los Angeles, California.",
+                "imageUrl": "../assets/images/map-la.jpg"
             }
         },
         {
@@ -40,7 +42,8 @@
             },
             "properties": {
                 "title": "Colombia",
-                "description": "Bogotá."
+                "description": "Bogotá.",
+                "imageUrl": "../assets/images/map-bogota.jpg"
             }
         },
         {
@@ -54,7 +57,8 @@
             },
             "properties": {
                 "title": "Brazil",
-                "description": "Porto Alegre, RS."
+                "description": "Porto Alegre, RS.",
+                "imageUrl": "../assets/images/map-poa.jpg"
             }
         }
     ]

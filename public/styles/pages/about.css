@@ -443,6 +443,11 @@
 
 @media only screen and (max-width:420px) {
 
+  .hero-about-section {
+    border-bottom-right-radius: var(--radius-sm-mobile);
+    border-bottom-left-radius: var(--radius-sm-mobile);
+  }
+
   .hero-about-section h1 {
     bottom: -6%;
     font-size: 62px;
@@ -463,6 +468,10 @@
   .custodian-about-section p {
     font-size: 16px;
   }
+
+  .carousel-about-section {
+    border-radius: var(--radius-sm-mobile);
+}
 
   .keys-about-section span {
     font-size: 31px;

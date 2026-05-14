@@ -180,6 +180,7 @@
     .details-section {
         width: 100%;
         margin: 0;
+        border-radius: var(--radius-sm-mobile);
     }
 
     .details-section h2 {

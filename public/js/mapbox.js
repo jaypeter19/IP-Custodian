@@ -8,40 +8,15 @@ const mapboxScriptUrl = new URL(document.currentScript.src);
 const geojsonUrl = new URL('../json/geojson.json', mapboxScriptUrl);
 const isMobile = window.matchMedia('(max-width: 575px)').matches;
 
-const escapeHtml = (value = '') => String(value).replace(/[&<>"']/g, (character) => ({
-    '&': '&amp;',
-    '<': '&lt;',
-    '>': '&gt;',
-    '"': '&quot;',
-    "'": '&#39;'
-}[character]));
-
-const getPopupImageUrl = (properties) => {
-    const imageUrl = (
-        properties.imageUrl
-        || properties.image
-        || properties.backgroundImage
-        || properties.background_image
-        || ''
-    );
-
-    return imageUrl
-        ? new URL(imageUrl, mapboxScriptUrl).href
-        : '';
-};
 
 const getPopupHtml = (properties) => {
-    const title = escapeHtml(properties.title);
-    const description = escapeHtml(properties.description).replace(/[.,;:]+$/, '');
-    const imageUrl = getPopupImageUrl(properties);
-    const imageStyle = imageUrl
-        ? ` style="--map-popup-image: url('${escapeHtml(imageUrl)}');"`
-        : '';
+    const title = properties.title;
+    const description = properties.description;
 
     return `
         <article class="map-popup-card">
             <h3 class="map-popup-title">${title}</h3>
-            <div class="map-popup-image"${imageStyle}>
+            <div class="map-popup-image" id="${properties.id}">
                 <span class="map-popup-location">${description}</span>
             </div>
         </article>

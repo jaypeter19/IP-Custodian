@@ -90,27 +90,39 @@
 
 .map-popup-image {
     align-items: center;
-    aspect-ratio: 2.45 / 1;
-    background-color: rgba(122, 57, 239, 0.18);
-    background-image:
-        linear-gradient(rgba(5, 25, 43, 0.28), rgba(5, 25, 43, 0.28)),
-        var(--map-popup-image, linear-gradient(135deg, rgba(122, 57, 239, 0.34), rgba(0, 143, 151, 0.28)));
-    background-position: center;
-    background-size: cover;
     display: flex;
     justify-content: center;
     min-height: 138px;
     padding: 24px;
+    aspect-ratio: 2.45 / 1;
+    background-position: center;
+    background-size: cover;
+}
+
+#IRL {
+    background-image: linear-gradient(rgba(5, 25, 43, 0.35), rgba(5, 25, 43, 0.35)), url(../../assets/images/map-dublin.jpg);
+}
+
+#US {
+    background-image: linear-gradient(rgba(5, 25, 43, 0.35), rgba(5, 25, 43, 0.35)), url(../../assets/images/map-la.jpg);
+}
+
+#COL {
+    background-image: linear-gradient(rgba(5, 25, 43, 0.35), rgba(5, 25, 43, 0.35)), url(../../assets/images/map-bogota.jpg);
+}
+
+#BR {
+    background-image: linear-gradient(rgba(5, 25, 43, 0.35), rgba(5, 25, 43, 0.35)), url(../../assets/images/map-poa.jpg);
 }
 
 .map-popup-location {
     font-family: var(--font-tertiary);
     font-size: 28px;
     font-weight: bold;
+    color: var(--white-primary);
     line-height: 1.1;
-    color: #fff;
     text-align: center;
-    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+    text-shadow: var(--text-shadow);
 }
 
 /* Custodian Avatar */

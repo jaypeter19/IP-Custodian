@@ -354,7 +354,7 @@
         }
 
         .about-services-section h2 {
-            font-size: 28px;
+            font-size: 24px;
             margin-bottom: 20px;
         }
 
@@ -405,6 +405,10 @@
     }
 
     @media only screen and (max-width: 390px) {
+
+        .about-services-section h2 {
+            font-size: 23px;
+        }
 
         .about-services-section .services-diy h3,
         .about-services-section .services-handle h3 {

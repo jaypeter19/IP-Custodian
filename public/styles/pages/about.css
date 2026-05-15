@@ -141,51 +141,16 @@
   color: var(--purple-gradient-darker);
 }
 
-.swiper-slide.card-3 {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(to bottom,
-      var(--orange-gradient) 0%,
-      var(--pink-gradient-dark) 50%,
-      var(--purple-gradient-darker-2) 100%);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Liquid Glass Shape */
-.swiper-slide.card-3::before {
-  content: "";
-  position: absolute;
-  width: 85%;
-  height: 90%;
-  top: 20px;
-  left: 12%;
-  border-radius: 35% 60% 65% 20% / 40% 35% 65% 65%;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.25);
-  backdrop-filter: blur(14px);
-  z-index: 0;
-}
-
-/* Texto */
-.swiper-slide.card-3 h3 {
-  position: relative;
-  z-index: 1;
-  font-size: 98px;
-  font-weight: bold;
-  color: rgba(255, 255, 255, 0.15);
-}
-
-.swiper-slide.card-4 {
+.swiper-slide.card-3, 
+ .swiper-slide.card-4{
   position: relative;
   overflow: hidden;
 }
 
+.swiper-slide.card-3 img, 
 .swiper-slide.card-4 img {
   width: 100%;
-  height: 102%;
+  height: 101%;
   object-fit: cover;
   display: block;
 }
@@ -194,7 +159,7 @@
 
 .keys-about-section p {
   font-family: var(--font-primary);
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 600;
   text-align: justify;
   line-height: var(--line-height-small);
@@ -331,14 +296,10 @@
   }
 
   .swiper-slide {
-    width: 450px;
+    width: 480px;
   }
 
   .swiper-slide.card-2 h3 {
-    font-size: 64px;
-  }
-
-  .swiper-slide.card-3 h3 {
     font-size: 64px;
   }
 
@@ -362,16 +323,7 @@
     min-height: 350px;
   }
 
-  .swiper-slide {
-    width: 350px;
-  }
-
-
   .swiper-slide.card-2 h3 {
-    font-size: 48px;
-  }
-
-  .swiper-slide.card-3 h3 {
     font-size: 48px;
   }
 
@@ -409,14 +361,10 @@
   }
 
   .swiper-slide {
-    width: 250px;
+    width: 280px;
   }
 
   .swiper-slide.card-2 h3 {
-    font-size: 36px;
-  }
-
-  .swiper-slide.card-3 h3 {
     font-size: 36px;
   }
 
@@ -458,7 +406,7 @@
   }
 
   .swiper-slide {
-    width: 240px;
+    width: 260px;
   }
 
   .custodian-about-section h2 {

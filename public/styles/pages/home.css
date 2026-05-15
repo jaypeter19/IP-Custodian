@@ -265,7 +265,7 @@
     height: 392px;
     width: 100%;
     margin: 1rem auto;
-    padding: 64px;
+    padding: 54px;
     transition: background-color 0.3s ease-in, color 0.3s ease-in;
 }
 
@@ -991,7 +991,7 @@
 
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 430px) {
 
     .hero-section {
         padding: var(--section-padding-sm);
@@ -1039,6 +1039,9 @@
 
     .differentiatior-section .carousel .card {
         height: 250px;
+        padding: 24px;
+        justify-content: center;
+        border-radius: var(--radius-md-mobile);
     }
 
     .card h3 {
@@ -1050,10 +1053,9 @@
     }
 
     .card-icon img {
-        height: 80px;
-        width: 80px;
-        left: -9%;
-        top: -10%;
+        height: 85px;
+        width: 85px;
+        left: -8%;
     }
 
     .services-options .service-option h3 {
@@ -1154,13 +1156,6 @@
         font-size: 43px;
     }
 
-    .differentiatior-section .carousel .card {
-        height: 250px;
-        padding: 24px;
-        justify-content: center;
-        border-radius: var(--radius-md-mobile);
-    }
-
     .card-icon img {
         height: 75px;
         width: 75px;
@@ -1216,5 +1211,27 @@
         font-size: 12px;
     }
 
+}
 
+@media only screen and (max-width: 340px) {
+     .differentiatior-section .carousel .card {
+        height: 220px;
+        padding: 10px;
+        justify-content: center;
+        border-radius: var(--radius-md-mobile);
+    }
+
+    .card-icon img {
+        height: 70px;
+        width: 70px;
+        left: -9%;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
 }

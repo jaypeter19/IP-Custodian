@@ -1,0 +1,31 @@
+RewriteEngine On
+
+# Redirect old .html URLs to clean URLs.
+RewriteCond %{THE_REQUEST} \s/+index\.html[\s?] [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+pages/about\.html[\s?] [NC]
+RewriteRule ^pages/about\.html$ /about [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+pages/contact\.html[\s?] [NC]
+RewriteRule ^pages/contact\.html$ /contact [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+pages/portfolio\.html[\s?] [NC]
+RewriteRule ^pages/portfolio\.html$ /portfolio [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+pages/renewals\.html[\s?] [NC]
+RewriteRule ^pages/renewals\.html$ /renewals [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+pages/enforcement\.html[\s?] [NC]
+RewriteRule ^pages/enforcement\.html$ /enforcement [R=301,L]
+
+RewriteCond %{THE_REQUEST} \s/+pages/thanks\.html[\s?] [NC]
+RewriteRule ^pages/thanks\.html$ /thanks [R=301,L]
+
+# Serve clean URLs.
+RewriteRule ^about/?$ pages/about.html [L]
+RewriteRule ^contact/?$ pages/contact.html [L]
+RewriteRule ^portfolio/?$ pages/portfolio.html [L]
+RewriteRule ^renewals/?$ pages/renewals.html [L]
+RewriteRule ^enforcement/?$ pages/enforcement.html [L]
+RewriteRule ^thanks/?$ pages/thanks.html [L]
